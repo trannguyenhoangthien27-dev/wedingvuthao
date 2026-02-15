@@ -1,0 +1,3975 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Meta Tags --> 
+    <meta name="description" content="Hân hạnh kính mời quý khách tham dự lễ thành hôn của Lê Nguyên Vũ và Trần Thị Thu Thảo vào lúc 13:00 Thứ 7, ngày 28 tháng 2 năm 2026 (tức 12/01 Âm lịch). Trân trọng kính mời!">
+    <meta name="keywords" content="thiệp cưới, Lê Nguyên Vũ, Trần Thị Thu Thảo, lễ thành hôn 28/02/2026, wedding invitation">
+    <meta name="author" content="Lê Nguyên Vũ & Trần Thị Thu Thảo">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph Meta Tags (Facebook, Messenger, LinkedIn) -->
+    <meta property="og:site_name" content="Thư mời cưới Lê Nguyên Vũ & Trần Thị Thu Thảo">
+    <meta property="og:title" content="Lễ Thành Hôn — Lê Nguyên Vũ & Trần Thị Thu Thảo — 28/02/2026">
+    <meta property="og:description" content="Hân hạnh kính mời quý khách tham dự lễ thành hôn của Lê Nguyên Vũ và Trần Thị Thu Thảo — Lễ thành hôn 28/02/2026.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="/">
+    <meta property="og:image" content="images/1(1).jpg">
+    <meta property="og:image:secure_url" content="images/1(1).jpg">
+    <meta property="og:image:type" content="image/jpeg">
+    <meta property="og:image:alt" content="Ảnh cưới Lê Nguyên Vũ và Trần Thị Thu Thảo - Lễ thành hôn 28/02/2026">
+    <meta property="og:locale" content="vi_VN">
+  
+
+    <!-- Facebook App ID (Optional - helps with insights) -->
+    <meta property="fb:app_id" content="">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Lễ Thành Hôn — Lê Nguyên Vũ & Trần Thị Thu Thảo — 28/02/2026">
+    <meta name="twitter:description" content="Hân hạnh kính mời quý khách tham dự lễ thành hôn của Lê Nguyên Vũ và Trần Thị Thu Thảo — Lễ thành hôn 28/02/2026.">
+    <meta name="twitter:image" content="images/1(1).jpg">
+    <meta name="twitter:image:alt" content="Ảnh cưới Lê Nguyên Vũ và Trần Thị Thu Thảo">
+    
+    <!-- Additional Meta Tags -->
+    <meta name="theme-color" content="#ffffff">
+    <link rel="canonical" href="/">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/jpeg" href="images/1(1).jpg">
+    <link rel="apple-touch-icon" href="images/1(1).jpg">
+    
+    <title>Thư Mời Cưới Lê Nguyên Vũ & Trần Thị Thu Thảo - 28/02/2026</title>
+    
+    <!-- Preload Critical Images -->
+    <link rel="preload" as="image" href="images/1(1).jpg">
+    <link rel="preload" as="image" href="images/1(9).jpg">
+    <link rel="preload" as="image" href="images/chure.jpg">
+    <link rel="preload" as="image" href="images/codau.jpg">
+    <link rel="preload" as="image" href="images/footer.png">
+    
+    <!-- DNS Prefetch for faster loading -->
+    <link rel="dns-prefetch" href="//fonts.googleapis.com">
+    <link rel="dns-prefetch" href="//fonts.gstatic.com">
+
+    <!-- Firebase SDK (compat) -->
+    <script src="https://www.gstatic.com/firebasejs/10.5.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.5.0/firebase-firestore-compat.js"></script>
+    
+    <!-- Config -->
+    <script src="config.js"></script>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Great+Vibes&family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <style>
+        /* CSS Cao cấp với đầy đủ Animation */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background: linear-gradient(135deg, #ffffff 0%, #ffffff 100%);
+            color: #333;
+            overflow-x: hidden;
+        }
+        
+        .container {
+            max-width: 100%;
+            margin: 0 auto;
+            
+            box-shadow: 0 0 50px rgba(196, 30, 58, 0.1);
+            position: relative;
+            transition: filter 0.5s;
+        }
+        
+        .container.blur {
+            filter: blur(10px);
+        }
+        
+        /* Loading Overlay */
+        .loading-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: #fff;
+            z-index: 9999;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            animation: fadeOut 1s 2s forwards;
+        }
+        
+        .loading-overlay h2 {
+            font-family: 'Great Vibes', cursive;
+            font-size: 48px;
+            color: #c41e3a;
+            margin-bottom: 20px;
+            animation: pulse 2s infinite;
+        }
+        
+        .loader {
+            width: 50px;
+            height: 50px;
+            border: 4px solid #f3f3f3;
+            border-top: 4px solid #c41e3a;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+        
+        .countdown-inline .separator {
+            color: #999;
+            margin: 0 6px;
+        }
+        
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        @keyframes pulseText {
+            0%, 100% {
+                opacity: 0.6;
+                transform: scale(1);
+            }
+            50% {
+                opacity: 1;
+                transform: scale(1.05);
+            }
+        }
+        
+        /* Button để đóng popup sau khi xem */
+        .btn-close-popup {
+            background: #c41e3a;
+            color: #fff;
+            padding: 15px 50px;
+            border: none;
+            border-radius: 50px;
+            font-size: 18px;
+            font-weight: 500;
+            cursor: pointer;
+            position: absolute;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.5s;
+            box-shadow: 0 5px 20px rgba(196, 30, 58, 0.5);
+        }
+        
+        .btn-close-popup:hover {
+            background: #a01830;
+            transform: translateX(-50%) scale(1.05);
+        }
+        
+        .envelope-container.opened ~ .btn-close-popup {
+            opacity: 1;
+            visibility: visible;
+            animation: slideUpFade 0.8s 1s backwards;
+        }
+        
+        @keyframes slideUpFade {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .btn-open {
+            background: #c41e3a;
+            color: #fff;
+            padding: 12px 40px;
+            border: none;
+            border-radius: 30px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 20px;
+            transition: all 0.3s;
+            position: relative;
+            z-index: 20;
+            animation: pulseButton 1.5s infinite;
+            box-shadow: 0 4px 15px rgba(196, 30, 58, 0.3);
+        }
+        
+        .btn-open:hover {
+            background: #a01830;
+            transform: scale(1.1);
+            animation: none;
+            box-shadow: 0 6px 20px rgba(196, 30, 58, 0.6);
+        }
+        
+        @keyframes pulseButton {
+            0%, 100% {
+                transform: scale(1);
+                box-shadow: 0 4px 15px rgba(196, 30, 58, 0.3);
+            }
+            50% {
+                transform: scale(1.05);
+                box-shadow: 0 6px 20px rgba(196, 30, 58, 0.6);
+            }
+        }
+        
+        /* Floating Hearts Background */
+        .hearts-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            overflow: hidden;
+            z-index: 1;
+        }
+        
+        .heart {
+            position: absolute;
+            font-size: 20px;
+            color: rgba(196, 30, 58, 0.3);
+            animation: floatHeart 10s infinite ease-in-out;
+        }
+        
+        
+        
+        /* Hero Section - Giống thiệp_opened.png */
+        .hero {
+            background: linear-gradient(to bottom, #fff 0%, #fff5f5 100%);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 40px 20px;
+            position: relative;
+        }
+        
+        /* Góc trang trí chữ Hỷ */
+        .hero-corners {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+        }
+        
+        .corner-decoration {
+            position: absolute;
+            font-size: 80px;
+            color: rgba(212, 175, 55, 0.3);
+            font-family: serif;
+        }
+        
+        .corner-decoration.top-left {
+            top: 20px;
+            left: 20px;
+        }
+        
+        .corner-decoration.top-right {
+            top: 20px;
+            right: 20px;
+        }
+        
+      
+        
+        .hero-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 32px;
+            font-weight: 400;
+            letter-spacing: 3px;
+            color: #333;
+            margin-bottom: 15px;
+            animation: fadeInDown 1s;
+        }
+        
+        /* Hero Section - Thiết kế với ảnh nền */
+        .hero {
+            position: relative;
+            min-height: 100vh;
+            display: flex;
+            align-items: flex-end !important;
+            justify-content: center;
+            overflow: hidden;
+        }
+        
+        .hero-background-image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 0;
+        }
+        
+        .hero-background-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+        
+        /* Desktop landscape - Ảnh dọc fill theo chiều cao */
+        @media (min-width: 769px) and (orientation: landscape) {
+            .hero-background-image img {
+                width: auto;
+                height: 100%;
+               
+                object-fit: cover;
+                object-position: center;
+            }
+        }
+        
+        .hero-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.15);
+            z-index: 1;
+        }
+        
+        .hero-gradient-bottom {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 70%;
+            background: linear-gradient(to top, rgba(0, 0, 0, 0.85) 0%, rgba(0, 0, 0, 0.6) 40%, transparent 100%);
+            z-index: 2;
+        }
+        
+        /* Hero Names at Top */
+        .hero-names-top {
+            position: absolute;
+            top: 40px;
+            left: 0;
+            right: 0;
+            width: 100%;
+            text-align: center;
+            z-index: 3;
+             color: #000;
+            text-shadow: 0 2px 10px ,rgba(105, 105, 105, 0.5);
+        }
+        
+        .hero-names-top .wedding-label {
+        
+            font-family: 'Great Vibes', cursive;
+            font-size: 20px;
+            font-weight: 400;
+            letter-spacing: 2px;
+            color: #4b4b4b;
+        }
+        
+        .hero-names-top .bride-groom {
+            font-family: 'Dancing Script', cursive;
+            font-size: 24px;
+            margin-bottom: 5px;
+            animation: fadeInDown 1.2s ease-out;
+        }
+        
+        .hero-names-top .wedding-symbol {
+            font-size: 20px;
+            margin: 0 15px;
+            color: #000;
+            animation: pulse 2s infinite;
+        }
+        
+        
+        .section {
+            padding: 0px 0px;
+        }
+        
+        .section-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 32px;
+            text-align: center;
+            margin-bottom: 20px;
+            color: #ffffff;
+        }
+        
+        /* Parents Info */
+        .parents-layout {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        
+        }
+        
+        .parent-section {
+            flex: 1;
+            text-align: center;
+        }
+        
+        .parent-header {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 16px;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 15px;
+            letter-spacing: 1px;
+        }
+        
+        .parent-name {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 15px;
+            font-weight: bold;
+            color: #333;
+           
+        }
+        
+        .parent-address {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 13px;
+            color: #666;
+          
+        }
+        
+        .couple-role {
+            margin-top: 20px;
+        }
+        
+        .role-label {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 12px;
+            color: #8d8d8d;
+            margin-bottom: 5px;
+        }
+        
+        .name-script {
+            font-family: 'Great Vibes', cursive;
+            font-size: 24px;
+            color: #000000;
+            margin-top: 5px;
+        }
+        
+        .heart-divider {
+            flex: 0 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 0px;
+        }
+        
+        .heart-image {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            transform: scale(2);
+
+        }
+        
+        /* Event Details */
+        .event-info {
+            background: #f9f9f9;
+            padding: 30px;
+            border-radius: 10px;
+            margin: 20px 0;
+            border-left: 4px solid #c41e3a;
+        }
+        
+        .event-info h3 {
+            color: #c41e3a;
+            margin-bottom: 15px;
+            font-size: 20px;
+        }
+        
+        .event-info p {
+            margin: 10px 0;
+            line-height: 1.6;
+        }
+        
+        /* Gallery */
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            margin-bottom: 20px;
+            padding: 40px 20px;
+            max-width: 1400px;
+            margin-left: auto;
+            margin-right: auto;
+            animation: fadeInUp 0.8s ease-out forwards;
+        }
+
+        /* Tablet: 3 cột */
+        @media (max-width: 1024px) {
+            .gallery-grid {
+                grid-template-columns: repeat(3, 1fr);
+                gap: 20px;
+            }
+        }
+
+        /* Tablet: 2 cột */
+        @media (max-width: 768px) {
+            .gallery-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 15px;
+                padding: 20px 10px;
+            }
+        }
+
+        /* Mobile: 2 cột nhỏ hơn */
+        @media (max-width: 480px) {
+            .gallery-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 12px;
+                padding: 20px 8px;
+            }
+        }
+        
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+            aspect-ratio: 4/5;
+            cursor: pointer;
+            border-radius: 12px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            background: #f5f5f5;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        /* Gallery overlay hiệu ứng */
+        .gallery-item > div {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(196, 30, 58, 0.7);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 30px;
+            z-index: 10;
+        }
+        
+        .gallery-item:hover {
+            transform: translateY(-12px) scale(1.02) !important;
+            box-shadow: 0 20px 45px rgba(196, 30, 58, 0.25) !important;
+            z-index: 10;
+        }
+        
+        .gallery-item:hover img {
+            transform: scale(1.15) rotate(2deg);
+        }
+
+        .gallery-item:hover > div {
+            opacity: 1 !important;
+        }
+        
+        /* Lightbox Popup */
+        .lightbox {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(255, 255, 255, 0.5);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            z-index: 9997;
+            display: none;
+            align-items: center;
+            justify-content: center;
+            animation: fadeIn 0.3s;
+        }
+        
+        .lightbox.active {
+            display: flex;
+        }
+        
+        .lightbox-content {
+            position: relative;
+            max-width: 90%;
+            max-height: 90%;
+            animation: zoomIn 0.4s;
+        }
+        
+        .lightbox-content img {
+            max-width: 100%;
+            max-height: 90vh;
+            border-radius: 10px;
+            box-shadow: 0 0 50px rgba(255, 255, 255, 0.3);
+        }
+        
+        .lightbox-close {
+            position: absolute;
+            top: -40px;
+            right: 0;
+            background: #c41e3a;
+            color: #fff;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            font-size: 24px;
+            transition: all 0.3s;
+        }
+        
+        .lightbox-close:hover {
+            background: #fff;
+            color: #c41e3a;
+            transform: rotate(90deg);
+        }
+        
+        .lightbox-nav {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: rgba(255, 255, 255, 0.2);
+            color: #fff;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            font-size: 24px;
+            transition: all 0.3s;
+        }
+        
+        .lightbox-nav:hover {
+            background: #c41e3a;
+        }
+        
+        .lightbox-prev { left: 20px; }
+        .lightbox-next { right: 20px; }
+        
+        /* Form */
+        .rsvp-form {
+            max-width: 400px;
+            margin: 0 auto;
+        }
+        
+        .form-group {
+            margin-bottom: 20px;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 500;
+            color: #333;
+        }
+        
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #ddd;
+            border-radius: 5px;
+            font-size: 14px;
+            transition: border-color 0.3s;
+        }
+        
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            border-color: #c41e3a;
+            outline: none;
+        }
+        
+        .btn-submit {
+            background: #c41e3a;
+            color: #fff;
+            padding: 15px 40px;
+            border: none;
+            border-radius: 50px;
+            font-size: 16px;
+            font-weight: 500;
+            cursor: pointer;
+            width: 100%;
+            transition: background 0.3s;
+        }
+        
+        .btn-submit:hover {
+            background: #a01830;
+        }
+        
+
+        
+        /* Music Button */
+        .music-toggle {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            width: 60px;
+            height: 60px;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            z-index: 1000;
+            transition: transform 0.3s;
+        }
+        
+        .music-toggle:hover {
+            transform: scale(1.1);
+        }
+        
+        .music-toggle img {
+            width: 40px;
+            height: 40px;
+        }
+        
+        /* Footer */
+        .footer {
+            background: #ffffff;
+            color: #000000;
+            text-align: center;
+            padding: 0px 20px;
+        }
+        
+        .footer h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 28px;
+          
+            color: #000000;
+        }
+        
+        /* Gift Popup */
+        .gift-popup {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            z-index: 9996;
+            display: none;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .gift-popup.active {
+            display: flex;
+            animation: fadeIn 0.3s;
+        }
+        
+        .gift-content {
+            background: #fff;
+            padding: 10px;
+            border-radius: 20px;
+            max-width: 400px;
+            width: 90%;
+            position: relative;
+            animation: slideUp 0.5s;
+            box-shadow: 0 10px 50px rgba(0,0,0,0.3);
+        }
+        
+        .gift-close {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            background: #c41e3a;
+            color: #fff;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            font-size: 20px;
+            transition: all 0.3s;
+        }
+        
+        .gift-close:hover {
+            transform: rotate(90deg);
+            background: #a01830;
+        }
+        
+        /* Animations */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        
+        @keyframes fadeOut {
+            to { 
+                opacity: 0;
+                visibility: hidden;
+            }
+        }
+        
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        @keyframes slideUp {
+            from { 
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            to { 
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        @keyframes zoomIn {
+            from {
+                opacity: 0;
+                transform: scale(0.5);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+        
+        @keyframes bounceIn {
+            0% {
+                opacity: 0;
+                transform: scale(0.3);
+            }
+            50% {
+                transform: scale(1.05);
+            }
+            70% {
+                transform: scale(0.9);
+            }
+            100% {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+        
+        @keyframes pulse {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.1);
+            }
+        }
+        
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        
+        @keyframes floatHeart {
+            0% {
+                transform: translateY(100vh) rotate(0deg);
+                opacity: 0;
+            }
+            10% {
+                opacity: 1;
+            }
+            90% {
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(-100px) rotate(360deg);
+                opacity: 0;
+            }
+        }
+        
+        @keyframes breathe {
+            0%, 100% {
+                opacity: 0.3;
+            }
+            50% {
+                opacity: 0.6;
+            }
+        }
+        
+        @keyframes sealGlow {
+            0%, 100% {
+                filter: drop-shadow(0 0 10px rgba(212, 175, 55, 0.5));
+            }
+            50% {
+                filter: drop-shadow(0 0 20px rgba(212, 175, 55, 1));
+            }
+        }
+        
+        @keyframes slideInFromLeft {
+            from {
+                opacity: 0;
+                transform: translateX(-100px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+        
+        @keyframes slideInFromRight {
+            from {
+                opacity: 0;
+                transform: translateX(100px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+        
+        /* Scroll Animation */
+        .scroll-reveal {
+            opacity: 0;
+            transform: translateY(50px);
+            transition: all 0.8s ease-out;
+        }
+        
+        .scroll-reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        /* Gallery Item Animations - MỚI */
+        .gallery-item {
+            opacity: 0;
+            transform: translateY(20px) scale(0.9);
+        }
+
+        /* Animation cho từng item với delay khác nhau - starts at 2.2s (after door closes at 2s) */
+        .gallery-item {
+            animation: galleryReveal 0.6s ease-out forwards;
+        }
+
+        .gallery-item:nth-child(1) { animation-delay: 2.2s; }
+        .gallery-item:nth-child(2) { animation-delay: 2.28s; }
+        .gallery-item:nth-child(3) { animation-delay: 2.36s; }
+        .gallery-item:nth-child(4) { animation-delay: 2.44s; }
+        .gallery-item:nth-child(5) { animation-delay: 2.52s; }
+        .gallery-item:nth-child(6) { animation-delay: 2.6s; }
+        .gallery-item:nth-child(7) { animation-delay: 2.68s; }
+        .gallery-item:nth-child(8) { animation-delay: 2.76s; }
+        .gallery-item:nth-child(9) { animation-delay: 2.84s; }
+        .gallery-item:nth-child(10) { animation-delay: 2.92s; }
+        .gallery-item:nth-child(11) { animation-delay: 3s; }
+        .gallery-item:nth-child(12) { animation-delay: 3.08s; }
+        .gallery-item:nth-child(13) { animation-delay: 3.16s; }
+        .gallery-item:nth-child(14) { animation-delay: 3.24s; }
+
+        @keyframes galleryReveal {
+            from {
+                opacity: 0;
+                transform: translateY(20px) scale(0.9);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0) scale(1);
+            }
+        }
+        
+        /* Parent Section Animations */
+        .parent-section {
+            opacity: 0;
+        }
+        
+        .parent-section.slide-in-left {
+            animation: slideInFromLeft 1s ease-out forwards;
+        }
+        
+        .parent-section.slide-in-right {
+            animation: slideInFromRight 1s ease-out forwards;
+        }
+
+        /* Parent Info Section */
+        .parent-info-section {
+            width: 100%;
+            padding: 0;
+            background: #ffffff;
+            display: flex;
+            align-items: stretch;
+            justify-content: center;
+        }
+
+        .parent-info-container {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            height: auto;
+            align-items: stretch;
+            gap: 40px;
+            padding: 30px 20px;
+        }
+
+        .parent-info-left {
+            flex: 0 0 calc(50% - 20px);
+            width: calc(50% - 20px);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            opacity: 0;
+            transform: translateX(-50px);
+            animation: slideInFromLeft 1.5s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+            animation-delay: 2.1s;
+        }
+
+        .parent-info-image-frame {
+            width: 100%;
+            max-width: 350px;
+            height: 450px;
+            border: 3px solid #e8b4b8;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(196, 30, 58, 0.12), 0 0 40px rgba(196, 30, 58, 0.08);
+            background: linear-gradient(135deg, #f5f5f5, #e8e8e8);
+            transition: all 0.5s ease;
+            position: relative;
+        }
+
+        .parent-info-image-frame::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+            animation: shimmerLoad 1.5s ease-in-out forwards;
+            animation-delay: 2.1s;
+            z-index: 1;
+            opacity: 0;
+        }
+
+        .parent-info-image-frame.loaded::before {
+            display: none;
+        }
+
+        @keyframes shimmerLoad {
+            0% { transform: translateX(-100%); opacity: 0; }
+            50% { opacity: 1; }
+            100% { transform: translateX(100%); opacity: 0; }
+        }
+
+        .parent-info-image-frame:hover {
+            box-shadow: 0 15px 50px rgba(196, 30, 58, 0.2), 0 0 60px rgba(196, 30, 58, 0.12);
+            transform: translateY(-8px);
+        }
+
+        .parent-info-image {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            object-position: center;
+            display: block;
+            background: linear-gradient(135deg, #f5f5f5, #e8e8e8);
+            transition: transform 0.5s ease;
+            animation: fadeInImage 0.8s ease-out forwards;
+            animation-delay: 2.1s;
+            opacity: 0;
+        }
+
+        .parent-info-image.loaded {
+            opacity: 1;
+        }
+
+        @keyframes fadeInImage {
+            from {
+                opacity: 0;
+                transform: scale(0.95);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        .parent-info-image-frame:hover .parent-info-image {
+            transform: scale(1.05);
+        }
+        
+        /* Ensure all images have a background fallback */
+        img {
+            background: linear-gradient(135deg, #f5f5f5, #e8e8e8);
+            backface-visibility: hidden;
+            -webkit-font-smoothing: antialiased;
+        }
+        
+        /* Hero background image fallback */
+        .hero-background-image img {
+            background: #f0f0f0 linear-gradient(135deg, rgba(100,100,100,0.1), rgba(150,150,150,0.1));
+            animation: heroFadeIn 1s ease-out;
+        }
+
+        @keyframes heroFadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        /* Gallery image optimization */
+        .gallery-item img {
+            animation: galleryImageLoad 0.6s ease-out;
+            will-change: transform;
+        }
+
+        @keyframes galleryImageLoad {
+            from {
+                opacity: 0;
+                transform: scale(0.95);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        /* Image loading optimization - preload critical images */
+        img[alt*="Hero"],
+        img[alt*="hero"],
+        img[alt*="Chú Rể"],
+        img[alt*="Cô Dâu"] {
+            content-visibility: auto;
+        }
+
+        .parent-info-right {
+            flex: 0 0 calc(50% - 20px);
+            width: calc(50% - 20px);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+            opacity: 0;
+            transform: translateX(50px);
+            animation: slideInFromRight 1.5s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+            animation-delay: 2.1s;
+        }
+
+        /* Phần 1: Thông tin gia đình */
+        .parent-info-family {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+        }
+
+        .parent-info-label {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 18px;
+            letter-spacing: 2px;
+            color: #000000;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+
+        .parent-info-parent-name {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 17px;
+            color: #333;
+            font-weight: 600;
+            line-height: 1.8;
+        }
+
+        .parent-info-address {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 16px;
+            color: #535353;
+            line-height: 1.8;
+            margin-top: 8px;
+        }
+
+        /* Phần 2: Tiêu đề và tên chú rể */
+        .parent-info-couple {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            margin-top: 10px;
+            text-align: center;
+        }
+
+        .parent-info-role {
+            font-family: 'Dancing Script', cursive;
+            font-size: 16px;
+            color: #000000;
+            font-weight: 400;
+        }
+
+        .parent-info-groom-name {
+            font-family: 'Great Vibes', cursive;
+            font-size: 48px;
+            color: #333;
+            font-weight: 400;
+            line-height: 1.2;
+            animation: fadeInUp 0.8s ease-out 0.2s backwards;
+        }
+
+        @keyframes fadeInLeft {
+            from {
+                opacity: 0;
+                transform: translateX(-30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes fadeInRight {
+            from {
+                opacity: 0;
+                transform: translateX(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Responsive for Parent Info */
+        @media (max-width: 1024px) {
+            .parent-info-container {
+                gap: 30px;
+                padding: 20px 15px;
+            }
+
+            .parent-info-left,
+            .parent-info-right {
+                flex: 0 0 calc(50% - 15px);
+                width: calc(50% - 15px);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .parent-info-section {
+                padding: 20px 0;
+            }
+
+            .parent-info-container {
+                flex-direction: column;
+                gap: 30px;
+                padding: 20px 15px;
+            }
+
+            .parent-info-left {
+                flex: 1;
+                width: 100%;
+                order: -1;
+            }
+
+            .parent-info-right {
+                flex: 1;
+                width: 100%;
+            }
+
+            .parent-info-image-frame {
+                max-width: 280px;
+            }
+
+            .parent-info-groom-name {
+                font-size: 36px;
+            }
+
+            .parent-info-label {
+                font-size: 15px;
+            }
+
+            .parent-info-parent-name {
+                font-size: 14px;
+            }
+
+            .parent-info-address {
+                font-size: 14px;
+            }
+        }
+
+        /* Additional nice effects */
+        .scroll-reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            animation: slideInUp 0.8s ease-out forwards;
+        }
+
+        @keyframes slideInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Hover effects for sections */
+        .parent-info-family {
+            transition: all 0.5s ease;
+        }
+
+        .parent-info-family:hover {
+            transform: translateY(-5px);
+        }
+
+        .parent-info-label {
+            position: relative;
+            display: inline-block;
+        }
+
+        .parent-info-label::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: linear-gradient(90deg, #c41e3a, #e91e63);
+            transition: width 0.5s ease;
+        }
+
+        .parent-info-family:hover .parent-info-label::after {
+            width: 100%;
+        }
+
+        /* Text animation */
+        @keyframes textGlow {
+            0%, 100% {
+                text-shadow: 0 0 10px rgba(196, 30, 58, 0.2);
+            }
+            50% {
+                text-shadow: 0 0 20px rgba(196, 30, 58, 0.4);
+            }
+        }
+
+        .parent-info-groom-name:hover {
+            animation: textGlow 0.6s ease-in-out;
+        }
+
+        /* Beautiful card animations */
+        .parent-info-family {
+            border-radius: 12px;
+            padding: 15px;
+            transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+
+        .parent-info-family:hover {
+            background: linear-gradient(135deg, rgba(196, 30, 58, 0.05), rgba(233, 30, 99, 0.05));
+            border-radius: 15px;
+        }
+
+        /* Smooth transitions for text elements */
+        .parent-info-parent-name,
+        .parent-info-address {
+            transition: all 0.4s ease;
+        }
+
+        .parent-info-family:hover .parent-info-parent-name {
+            color: #c41e3a;
+            transform: translateX(5px);
+        }
+
+        .parent-info-family:hover .parent-info-address {
+            color: #555;
+            transform: translateX(-5px);
+        }
+
+        /* Smooth button animations */
+        button, .btn-submit, .btn-copy, .btn-open, .btn-link {
+            position: relative;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+
+        button:hover, .btn-submit:hover, .btn-copy:hover, .btn-open:hover, .btn-link:hover {
+            box-shadow: 0 8px 25px rgba(196, 30, 58, 0.35);
+        }
+
+        /* Glow effect on hover */
+        .btn-submit::before,
+        .btn-open::before,
+        .btn-link::before,
+        .btn-copy::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 0;
+            height: 0;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.5);
+            transform: translate(-50%, -50%);
+            transition: width 0.6s, height 0.6s;
+        }
+
+        .btn-submit:hover::before,
+        .btn-open:hover::before,
+        .btn-link:hover::before,
+        .btn-copy:hover::before {
+            width: 300px;
+            height: 300px;
+        }
+
+        /* Soft glow on section titles */
+        .section-title {
+            position: relative;
+            transition: all 0.5s ease;
+        }
+
+        .section-title:hover {
+            text-shadow: 0 0 20px rgba(196, 30, 58, 0.3);
+        }
+
+        /* Smooth reveal for content */
+        .section {
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* Card lift effect */
+        .parent-info-container > div {
+            transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+
+        .parent-info-container > div:hover {
+            transform: translateY(-8px);
+        }
+
+        /* Enhanced animations */
+        @keyframes shimmer {
+            0% { background-position: -1000px 0; }
+            100% { background-position: 1000px 0; }
+        }
+
+        /* Add subtle floating effect */
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+        }
+
+        @media (max-width: 480px) {
+
+            .parent-info-groom-name {
+                font-size: 30px;
+            }
+
+            .parent-info-image-frame {
+                max-width: 240px;
+            }
+        }
+        
+        /* Responsive */
+        
+        /* Desktop - Large screens */
+        @media (min-width: 1200px) {
+            .container {
+                max-width: 100%;
+            }
+            
+            .hero-title {
+                font-size: 36px;
+            }
+            
+            .hero-subtitle {
+                font-size: 64px;
+            }
+            
+            .hero-date {
+                font-size: 56px;
+            }
+            
+            .hero-year {
+                font-size: 40px;
+            }
+            
+            .section-title {
+                font-size: 36px;
+            }
+            
+            .envelope-container {
+                max-width: 400px;
+                margin-top: 100px;
+            }
+        }
+        
+        /* Laptop/Desktop - Medium screens */
+        @media (min-width: 768px) and (max-width: 1199px) {
+            .container {
+                 max-width: 100%;
+            }
+            
+            .envelope-container {
+                max-width: 350px;
+                margin-top: 80px;
+            }
+            
+            .hero-envelope {
+                max-width: 450px;
+            }
+            
+            .section {
+                padding: 0px 0px;
+            }
+        }
+        
+        /* Tablet - Medium screens */
+        @media (max-width: 767px) {
+            .container {
+                max-width: 100%;
+            }
+            
+            .hero {
+                align-items: flex-end !important;
+            }
+            
+
+            
+            .hero-watermark {
+                font-size: 9px;
+                letter-spacing: 2px;
+            }
+            
+            .section-title {
+                font-size: 28px;
+            }
+            
+            .section {
+                padding: 0px 0px;
+            }
+            
+            .envelope-container {
+                max-width: 380px;
+            }
+            
+            .parents-grid {
+                gap: 15px;
+            }
+        }
+        
+        /* Mobile - Small screens */
+        @media (max-width: 480px) {
+            .container {
+                box-shadow: none;
+                max-width: 100%;
+            }
+        
+            .hero {
+                padding: 30px 15px;
+            }
+            
+            .hero-title {
+                font-size: 24px;
+                letter-spacing: 2px;
+            }
+            
+            .hero-subtitle {
+                font-size: 40px;
+            }
+            
+            .hero-envelope {
+                max-width: 320px;
+            }
+            
+            .hero-names {
+                gap: 15px;
+                flex-wrap: wrap;
+            }
+            
+            .hero-names .divider {
+                width: 60px;
+            }
+            
+            .hero-names .name {
+                font-size: 28px;
+            }
+            
+            .hero-watermark {
+                font-size: 8px;
+                letter-spacing: 1.5px;
+                top: 15px;
+            }
+            
+            .corner-decoration {
+                font-size: 60px;
+            }
+            
+            .section {
+                padding: 0px px;
+            }
+            
+            .section-title {
+                font-size: 26px;
+            }
+            
+            .hero-names-top {
+                top: 20px;
+            }
+            
+            
+            .hero-names-top .bride-groom {
+                font-size: 28px;
+            }
+            
+            .hero-names-top .wedding-symbol {
+                font-size: 16px;
+                margin: 0 10px;
+            }
+            
+            .envelope-container {
+                max-width: 320px;
+                width: 85%;
+            }
+            
+            .parents-layout {
+                flex-direction: row;
+                gap: 0px;
+                align-items: center;
+                margin-top: 20px;
+            }
+            
+            .parent-section {
+                flex: 1;
+             
+
+            }
+            
+            .heart-image {
+                width: 40px;
+                height: 40px;
+                object-fit: cover;
+                transform: scale(2);
+            }
+            
+            .parent-header {
+                font-size: 12px;
+            }
+                   
+            
+            .event-info {
+                padding: 20px;
+            }
+            
+            .event-info h3 {
+                font-size: 18px;
+            }
+            
+            .event-info p {
+                font-size: 14px;
+            }
+            
+        
+            .rsvp-form {
+                padding: 0 10px;
+            }
+            
+            .form-group input,
+            .form-group select,
+            .form-group textarea {
+                padding: 10px;
+                font-size: 13px;
+            }
+            
+            .btn-submit {
+                padding: 12px 30px;
+                font-size: 15px;
+            }
+            
+           
+            
+            .music-toggle {
+                width: 50px;
+                height: 50px;
+                bottom: 15px;
+                left: 15px;
+            }
+            
+            .music-toggle img {
+                width: 30px;
+                height: 30px;
+            }
+            
+            .footer h3 {
+                font-size: 24px;
+            }
+            
+            .footer div {
+                font-size: 28px;
+            }
+            
+            
+            
+            .lightbox-nav {
+                width: 40px;
+                height: 40px;
+                font-size: 20px;
+            }
+            
+            .lightbox-prev { left: 10px; }
+            .lightbox-next { right: 10px; }
+        }
+        
+        /* Mobile - Extra small screens */
+        @media (max-width: 360px) {
+            .hero {
+                align-items: flex-end !important;
+            }
+            
+
+            .hero-title {
+                font-size: 22px;
+            }
+            
+            .hero-subtitle {
+                font-size: 36px;
+            }
+            
+            .hero-envelope {
+                max-width: 280px;
+            }
+            
+            .hero-names .name {
+                font-size: 24px;
+            }
+            
+            .hero-date {
+                font-size: 32px;
+            }
+            
+            .hero-year {
+                font-size: 24px;
+            }
+            
+            .section-title {
+                font-size: 24px;
+            }
+            
+            .envelope-container {
+                max-width: 280px;
+            }
+            
+            .hero-names-top {
+                top: 15px;
+            }
+            
+            .hero-names-top .bride-groom {
+                font-size: 24px;
+            }
+            
+            .hero-names-top .wedding-symbol {
+                font-size: 14px;
+                margin: 0 8px;
+            }
+
+        }
+
+        /* Force countdown-inline children to lay out horizontally
+           We use !important here to override external stylesheet rules
+           since the user requested changes only inside this file. */
+        .countdown-container, #countdownContainer {
+            background: transparent !important;
+            padding: 0 !important;
+            box-shadow: none !important;
+            border-radius: 0 !important;
+        }
+
+        .countdown-inline {
+            display: flex !important;
+            flex-direction: row !important;
+            gap: 14px !important;
+            align-items: center !important;
+            justify-content: center !important;
+            flex-wrap: nowrap !important;
+        }
+
+        .countdown-inline .countdown-item {
+            display: flex !important;
+            flex-direction: column !important;
+            align-items: center !important;
+            justify-content: center !important;
+            margin: 0 !important;
+            position: relative !important; /* for absolute positioning of label */
+        }
+
+        /* Smaller circles, tighter typography, and stacking so labels are not hidden
+           These are document-level overrides (use !important to beat external stylesheet). */
+        .countdown-inline .countdown-item {
+            --size: 86px !important; /* smaller circle diameter */
+            width: var(--size) !important;
+            height: var(--size) !important;
+            margin: 0 6px !important;
+        }
+
+        .countdown-inline .countdown-item strong {
+            font-size: 20px !important; /* number size */
+            line-height: 1 !important;
+            padding: 0 !important;
+            margin: 0 !important;
+            position: absolute !important; /* center in circle */
+            top: 50% !important;
+            left: 50% !important;
+            transform: translate(-50%, -50%) !important;
+            text-align: center !important;
+            width: auto !important;
+            min-width: 0 !important;
+        }
+
+        .countdown-inline .countdown-item small {
+            font-size: 11px !important; /* label size */
+            color: rgba(0,0,0,0.55) !important;
+            position: absolute !important; /* pin to bottom */
+            bottom: 10% !important;
+            left: 50% !important;
+            transform: translateX(-50%) !important;
+        }
+
+        /* Keep the translucent band but ensure it's behind content */
+        .countdown-inline .countdown-item::after {
+            height: 28% !important;
+            bottom: 6% !important;
+            left: 8% !important;
+            right: 8% !important;
+           
+            z-index: 0 !important; /* behind */
+        }
+
+        /* Ensure visible foreground for number + label */
+        .countdown-inline .countdown-item > * {
+            position: relative !important;
+            z-index: 1 !important;
+        }
+
+        /* Mobile: even smaller */
+        @media (max-width: 480px) {
+            .countdown-inline .countdown-item { --size: 64px !important; }
+            .countdown-inline .countdown-item strong { font-size: 16px !important; }
+            .countdown-inline .countdown-item small { font-size: 10px !important; margin-top: 6px !important; }
+            .countdown-inline { gap: 10px !important; }
+        }
+
+        /* Door Opening Animation */
+        .door-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 10000;
+            display: flex;
+        }
+
+        .door {
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+
+        .door-left {
+            left: 0;
+            background-image: url('image2/door.png');
+           
+            animation: openDoorLeft 1.5s ease-in-out forwards;
+            animation-delay: 0.5s;
+        }
+
+        .door-right {
+            right: 0;
+            background-image: url('image2/door-right.png');
+           
+            animation: openDoorRight 1.5s ease-in-out forwards;
+            animation-delay: 0.5s;
+        }
+
+        @keyframes openDoorLeft {
+            0% {
+                transform: translateX(0%);
+            }
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+
+        @keyframes openDoorRight {
+            0% {
+                transform: translateX(0%) ;
+            }
+            100% {
+                transform: translateX(100%) ;
+            }
+        }
+
+        .door-overlay.closed {
+            pointer-events: none;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.5s ease-out, visibility 0.5s ease-out;
+        }
+
+        /* Calendar Section */
+        .calendar-container {
+            position: relative;
+            width: 100%;
+           
+          
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .calendar-image {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        /* Calendar Section - Not used */
+        .calendar-container {
+            display: none;
+        }
+
+        .select-date-28 {
+            display: none;
+        }
+
+        @keyframes bounce {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+        
+        /* ===== ENHANCEMENT STYLES ===== */
+        
+        /* Improve section styling */
+        .section {
+            background: #ffffff;
+            transition: all 0.3s ease;
+        }
+        
+        .section:nth-child(even) {
+            background: linear-gradient(135deg, rgba(255,255,255,0.98), rgba(255,245,245,0.98));
+        }
+        
+        /* Better button styles */
+        button {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            font-family: inherit;
+            letter-spacing: 0.5px;
+        }
+        
+        button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(196, 30, 58, 0.35) !important;
+        }
+        
+        button:active {
+            transform: translateY(0);
+        }
+        
+        /* Better text selection */
+        ::selection {
+            background: #c41e3a;
+            color: #fff;
+        }
+        
+        ::-moz-selection {
+            background: #c41e3a;
+            color: #fff;
+        }
+        
+        /* Smooth scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+        
+        ::-webkit-scrollbar-thumb {
+            background: #c41e3a;
+            border-radius: 4px;
+        }
+        
+        ::-webkit-scrollbar-thumb:hover {
+            background: #a01830;
+        }
+        
+        /* Enhanced card/container styling */
+        .event-info,
+        .lightbox-content,
+        .gift-content {
+            background: linear-gradient(135deg, rgba(255,255,255,0.98), rgba(255,250,250,0.98));
+            border: 1px solid rgba(196, 30, 58, 0.15);
+        }
+        
+        /* Improve text readability */
+        body {
+            text-rendering: optimizeLegibility;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        
+        /* Better link styles */
+        a {
+            color: #c41e3a;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+        
+        a:hover {
+            color: #e91e63;
+        }
+        
+        /* Improve form inputs */
+        input, textarea, select {
+            transition: all 0.3s ease;
+            font-family: inherit;
+        }
+        
+        input:focus, textarea:focus, select:focus {
+            box-shadow: 0 0 0 3px rgba(196, 30, 58, 0.1);
+        }
+        
+        /* Better spacing for headings */
+        h1, h2, h3, h4, h5, h6 {
+            letter-spacing: 0.5px;
+            line-height: 1.3;
+            margin-bottom: 1rem;
+        }
+        
+        /* Hero section enhancement */
+        .hero {
+            background: linear-gradient(to bottom, 
+                rgba(255,255,255,0.98) 0%, 
+                rgba(255,250,250,0.95) 50%, 
+                rgba(255,245,245,0.98) 100%);
+            animation: fadeInDown 1s ease-out;
+        }
+
+        /* ===== GLOBAL ANIMATIONS FOR LIVELY WEBSITE ===== */
+        
+        /* H2 Section Titles - Elegant fade-in from top */
+        section h2 {
+            animation: fadeInDown 0.8s ease-out;
+            transition: all 0.3s ease;
+        }
+
+        section h2:hover {
+            text-shadow: 0 0 15px rgba(196, 30, 58, 0.4);
+            transform: translateY(-3px);
+        }
+
+        /* All paragraph text subtle animations */
+        p {
+            animation: fadeInUp 0.8s ease-out;
+            transition: color 0.3s ease, transform 0.3s ease;
+        }
+
+        /* Section animations - scroll reveal with fade-in */
+        .section {
+            position: relative;
+            opacity: 0;
+            transform: translateY(30px);
+        }
+
+        .section.visible {
+            animation: fadeInUp 0.8s ease-out forwards;
+        }
+
+        .section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, transparent, rgba(196, 30, 58, 0.02), transparent);
+            pointer-events: none;
+            animation: shimmerEffect 3s ease-in-out infinite;
+        }
+
+        @keyframes shimmerEffect {
+            0%, 100% { opacity: 0; }
+            50% { opacity: 1; }
+        }
+
+        /* Enhanced Button Effects - Scale + Glow + Ripple */
+        .btn-submit, .btn-open, .btn-link, .btn-copy, .btn-close-popup {
+            position: relative;
+            overflow: hidden;
+            animation: scaleIn 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            transform-origin: center;
+        }
+
+        @keyframes scaleIn {
+            from {
+                opacity: 0;
+                transform: scale(0.8);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        .btn-submit:hover, 
+        .btn-open:hover, 
+        .btn-link:hover, 
+        .btn-copy:hover, 
+        .btn-close-popup:hover {
+            transform: scale(1.08) translateY(-3px) !important;
+            box-shadow: 0 12px 35px rgba(196, 30, 58, 0.45) !important;
+            background: linear-gradient(135deg, #c41e3a, #e91e63) !important;
+        }
+
+        .btn-submit:active, 
+        .btn-open:active, 
+        .btn-link:active, 
+        .btn-copy:active, 
+        .btn-close-popup:active {
+            transform: scale(1.02) translateY(-1px) !important;
+        }
+
+        /* Ripple effect on button click */
+        .btn-submit::after, 
+        .btn-open::after, 
+        .btn-link::after, 
+        .btn-copy::after,
+        .btn-close-popup::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 0;
+            height: 0;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.6);
+            transform: translate(-50%, -50%);
+            transition: width 0.6s, height 0.6s, opacity 0.6s;
+            opacity: 1;
+        }
+
+        .btn-submit:active::after, 
+        .btn-open:active::after, 
+        .btn-link:active::after, 
+        .btn-copy:active::after,
+        .btn-close-popup:active::after {
+            width: 300px;
+            height: 300px;
+            opacity: 0;
+        }
+
+        /* Countdown Timer - Pulse and glow effects */
+        .countdown-inline .countdown-item {
+            animation: countdownFadeIn 0.6s ease-out;
+            transition: all 0.3s ease;
+        }
+
+        .countdown-inline .countdown-item:hover {
+            transform: scale(1.1);
+            filter: drop-shadow(0 0 10px rgba(196, 30, 58, 0.5));
+        }
+
+        .countdown-inline .countdown-item strong {
+            animation: pulseValue 1.5s ease-in-out infinite;
+        }
+
+        @keyframes countdownFadeIn {
+            from {
+                opacity: 0;
+                transform: scale(0.8);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        @keyframes pulseValue {
+            0%, 100% {
+                opacity: 1;
+                transform: scale(1);
+            }
+            50% {
+                opacity: 0.8;
+                transform: scale(1.05);
+            }
+        }
+
+        /* Parent family cards - Smooth entrance and hover effects */
+        .parent-info-family {
+            animation: slideInFromLeft 0.8s ease-out;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .parent-info-family::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(196, 30, 58, 0.1), transparent);
+            transition: left 0.6s ease;
+            z-index: 0;
+        }
+
+        .parent-info-family:hover::before {
+            left: 100%;
+        }
+
+        .parent-info-family > * {
+            position: relative;
+            z-index: 1;
+            transition: all 0.3s ease;
+        }
+
+        .parent-info-family:hover .parent-info-parent-name {
+            transform: translateX(8px);
+            color: #c41e3a;
+        }
+
+        .parent-info-family:hover .parent-info-address {
+            transform: translateX(-8px);
+            color: #444;
+        }
+
+        /* Couple name animations - elegant pulse */
+        .parent-info-groom-name, 
+        .name-script {
+            animation: fadeInUp 0.8s ease-out 0.3s backwards;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        .parent-info-groom-name:hover,
+        .name-script:hover {
+            transform: scale(1.08);
+            text-shadow: 0 0 15px rgba(196, 30, 58, 0.3);
+        }
+
+        /* Music toggle button animation */
+        .music-toggle {
+            animation: slideInFromLeft 0.8s ease-out;
+            transition: all 0.3s ease;
+        }
+
+        .music-toggle:hover {
+            transform: scale(1.15) rotate(10deg);
+            box-shadow: 0 8px 25px rgba(196, 30, 58, 0.4);
+        }
+
+        /* Event info cards animations */
+        .event-info {
+            animation: slideInFromRight 0.8s ease-out;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .event-info::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(196, 30, 58, 0.1), transparent);
+            transition: right 0.6s ease;
+        }
+
+        .event-info:hover::before {
+            right: 100%;
+        }
+
+        .event-info h3 {
+            animation: fadeInDown 0.6s ease-out 0.2s backwards;
+            transition: all 0.3s ease;
+        }
+
+        .event-info h3:hover {
+            transform: translateY(-5px);
+            color: #e91e63;
+        }
+
+        .event-info p {
+            animation: fadeInUp 0.6s ease-out 0.3s backwards;
+        }
+
+        /* Form inputs smooth animations */
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            animation: fadeInUp 0.8s ease-out;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            transform: translateY(-3px);
+            box-shadow: 0 0 0 3px rgba(196, 30, 58, 0.2), 0 8px 25px rgba(196, 30, 58, 0.15) !important;
+        }
+
+        .form-group label {
+            animation: fadeInDown 0.6s ease-out;
+            transition: color 0.3s ease;
+        }
+
+        .form-group:hover label {
+            color: #c41e3a;
+        }
+
+        /* Gift popup animations */
+        .gift-content {
+            animation: slideUp 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .gift-close {
+            animation: fadeIn 0.3s ease-out 0.3s backwards;
+            transition: all 0.3s ease;
+        }
+
+        .gift-close:hover {
+            transform: rotate(90deg) scale(1.1);
+            box-shadow: 0 0 15px rgba(196, 30, 58, 0.4);
+        }
+
+        /* Lightbox close button animation */
+        .lightbox-close {
+            animation: fadeIn 0.4s ease-out 0.2s backwards;
+            transition: all 0.3s ease;
+        }
+
+        .lightbox-close:hover {
+            transform: rotate(90deg) scale(1.15);
+            box-shadow: 0 0 20px rgba(196, 30, 58, 0.5);
+        }
+
+        /* Lightbox nav buttons */
+        .lightbox-nav {
+            animation: fadeInUp 0.5s ease-out;
+            transition: all 0.3s ease;
+        }
+
+        .lightbox-nav:hover {
+            transform: scale(1.15);
+            box-shadow: 0 0 20px rgba(196, 30, 58, 0.5);
+        }
+
+        /* Hearts divider animation */
+        .heart-divider {
+            animation: fadeIn 0.8s ease-out;
+        }
+
+        .heart-image {
+            animation: pulse 2s ease-in-out infinite;
+            transition: all 0.3s ease;
+        }
+
+        .heart-divider:hover .heart-image {
+            transform: scale(2.5);
+            filter: drop-shadow(0 0 10px rgba(196, 30, 58, 0.5));
+        }
+
+        /* Couple role text - elegant reveal */
+        .couple-role {
+            animation: fadeInUp 0.8s ease-out 0.2s backwards;
+        }
+
+        .parent-info-role {
+            animation: fadeInDown 0.6s ease-out;
+            transition: all 0.3s ease;
+        }
+
+        /* Parent layout smooth entrance */
+        .parents-layout {
+            animation: fadeInUp 0.8s ease-out;
+        }
+
+        /* Better line decoration animation */
+        img[alt="Timeline"] {
+            animation: fadeInUp 0.8s ease-out 0.3s backwards;
+            transition: all 0.4s ease;
+        }
+
+        img[alt="Timeline"]:hover {
+            filter: drop-shadow(0 5px 15px rgba(196, 30, 58, 0.2));
+        }
+
+        /* Parent image frame hover lift effect */
+        .parent-info-image-frame {
+            animation: fadeInUp 0.8s ease-out;
+        }
+
+        /* Envelope container pulsing entrance */
+        .envelope-container {
+            animation: slideUp 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        /* Add stagger animation for multiple elements - starts at 2.1s (after door closes) */
+        .section.visible {
+            animation-delay: 2.1s;
+        }
+
+        /* Stagger delays for subsequent sections */
+        section.scroll-reveal:nth-of-type(1).visible { animation-delay: 2.1s; }
+        section.scroll-reveal:nth-of-type(2).visible { animation-delay: 2.2s; }
+        section.scroll-reveal:nth-of-type(3).visible { animation-delay: 2.3s; }
+        section.scroll-reveal:nth-of-type(4).visible { animation-delay: 2.4s; }
+        section.scroll-reveal:nth-of-type(5).visible { animation-delay: 2.5s; }
+        section.scroll-reveal:nth-of-type(6).visible { animation-delay: 2.6s; }
+
+        /* Text shadow hover effects on headings */
+        h1, h2, h3 {
+            position: relative;
+            display: inline-block;
+            transition: all 0.3s ease;
+        }
+
+        h1:hover, h2:hover, h3:hover {
+            text-shadow: 0 0 20px rgba(196, 30, 58, 0.2);
+        }
+
+        /* General link hover glow */
+        a {
+            position: relative;
+            transition: all 0.3s ease;
+        }
+
+        a::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: #c41e3a;
+            transition: width 0.3s ease;
+        }
+
+        a:hover::after {
+            width: 100%;
+        }
+
+        /* Scroll reveal animations trigger */
+        .scroll-reveal.active {
+            animation: fadeInUp 0.8s ease-out !important;
+        }
+
+        /* ===== ENHANCED IMAGE EFFECTS ===== */
+        
+        /* Image Container Glow Effect */
+        .parent-info-image-frame,
+        .gallery-item {
+            background: linear-gradient(135deg, rgba(196, 30, 58, 0.05), rgba(233, 30, 99, 0.05));
+            position: relative;
+        }
+
+        /* Smooth image transitions */
+        img {
+            transition: filter 0.4s ease, transform 0.4s ease, opacity 0.4s ease;
+        }
+
+        /* Lazy loaded images smooth reveal */
+        img[loading="lazy"] {
+            animation: imageReveal 0.8s ease-out forwards;
+        }
+
+        @keyframes imageReveal {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        /* Image hover brightness effect */
+        .parent-info-image:hover,
+        .gallery-item img:hover {
+            filter: brightness(1.05) contrast(1.02);
+        }
+
+        /* Skeleton loader animation */
+        @keyframes skeletonLoading {
+            0% {
+                background-position: -1000px 0;
+            }
+            100% {
+                background-position: 1000px 0;
+            }
+        }
+
+        /* Loading state for images */
+        img[loading="lazy"] {
+            min-height: 100px;
+        }
+
+        /* Stagger animation for gallery thumbnails */
+        .gallery-item:nth-child(odd) {
+            animation-duration: 0.6s;
+        }
+
+        .gallery-item:nth-child(even) {
+            animation-duration: 0.65s;
+        }
+
+        /* Better focus states for accessibility */
+        img:focus-visible {
+            outline: 3px solid #c41e3a;
+            outline-offset: 2px;
+        }
+
+        /* Image zoom on scroll */
+        img {
+            transform: translateZ(0);
+        }
+
+        /* Quick loading state visualization */
+        .parent-info-image-frame.loading {
+            background: linear-gradient(90deg, 
+                rgba(200, 200, 200, 0.2) 0%, 
+                rgba(200, 200, 200, 0.4) 50%, 
+                rgba(200, 200, 200, 0.2) 100%);
+            background-size: 200% 100%;
+            animation: skeletonLoading 2s infinite;
+        }
+
+        /* Ultra smooth animations for critical path */
+        .hero-background-image img,
+        .parent-info-image {
+            image-rendering: -webkit-optimize-contrast;
+            image-rendering: crisp-edges;
+        }
+
+        /* Performance: Reduce paint areas */
+        .gallery-grid,
+        .parent-info-container {
+            contain: layout style;
+        }
+
+        /* Smooth color transitions */
+        * {
+            -webkit-transition: color 0.3s ease;
+            transition: color 0.3s ease;
+        }
+
+        /* Better spacing for images on mobile */
+        @media (max-width: 768px) {
+            .parent-info-image-frame {
+                height: 380px;
+                max-width: 320px;
+            }
+
+            .gallery-item {
+                aspect-ratio: 4/5;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .parent-info-image-frame {
+                height: 320px;
+                max-width: 280px;
+            }
+
+            .gallery-item {
+                aspect-ratio: 1/1.2;
+            }
+        }
+
+        /* Mobile-friendly logo and image responsive styling */
+        @media (max-width: 768px) {
+            /* Hero background responsive */
+            .hero-background-image img {
+                object-fit: contain;
+                object-position: center;
+            }
+
+            /* Ensure all images scale properly on mobile */
+            img {
+                max-width: 100%;
+                height: auto;
+            }
+
+            /* Logo/avatar images mobile friendly */
+            img[alt*="Chú Rể"],
+            img[alt*="Cô Dâu"],
+            img[alt*="Avatar"] {
+                max-width: 100%;
+                height: auto;
+                display: block;
+            }
+        }
+
+        @media (max-width: 480px) {
+            /* Extra small devices optimization */
+            img {
+                max-width: 100%;
+                height: auto;
+                display: block;
+            }
+
+            /* Fine-tune hero image for small screens */
+            .hero-background-image img {
+                object-fit: cover;
+                height: 100vh;
+            }
+
+            /* Ensure logo images are responsive */
+            img[alt*="wedding"],
+            img[alt*="logo"],
+            img[alt*="Album"] {
+                max-width: 100% !important;
+                height: auto !important;
+            }
+        }
+
+        /* Reduced motion for accessibility */
+        @media (prefers-reduced-motion: reduce) {
+            * {
+                animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: 0.01ms !important;
+            }
+        }
+
+       
+    </style>
+</head>
+<body>
+    <!-- Door Opening Animation -->
+    <div class="door-overlay" id="doorOverlay">
+        <div class="door door-left"></div>
+        <div class="door door-right"></div>
+    </div>
+
+    <!-- Loading Overlay -->
+    <!-- <div class="loading-overlay">
+        <h2>Lê Nguyên Vũ  💕  Trần Thị Thu Thảo</h2>
+        
+    </div> -->
+
+    <!-- Floating Hearts Background -->
+    <div class="hearts-container">
+        <div class="heart">💕</div>
+        <div class="heart">💕</div>
+        <div class="heart">💕</div>
+        <div class="heart">💕</div>
+        <div class="heart">💕</div>
+         <div class="heart">💕</div>
+        <div class="heart">💕</div>
+        <div class="heart">💕</div>
+        <div class="heart">💕</div>
+        <div class="heart">💕</div>
+    </div>
+
+    <!-- Lightbox Gallery -->
+    <div class="lightbox" id="lightbox">
+        <div class="lightbox-content">
+            <img id="lightboxImg" src="" alt="Gallery Image">
+        </div>
+    </div>
+
+   
+
+    <div class="container">
+        <!-- Hero Section - Thiết kế với ảnh nền -->
+        <section class="hero ">
+            <!-- Ảnh nền cặp đôi -->
+            <div class="hero-background-image">
+                <img src="images/1(9).jpg" 
+                     alt="Lê Nguyên Vũ & Cô Thảo">
+            </div>
+            
+            <!-- Tên cô dâu chú rể ở đầu -->
+            <div class="hero-names-top">
+                <!-- <div class="wedding-label">Lễ Vu Quy</div> -->
+                <div class="bride-groom">
+                    Lê Nguyên Vũ & Trần Thị Thu Thảo
+                </div>
+            </div>
+            
+            <!-- Content ở bottom của hero-background-image -->
+            <div class="hero-content">
+
+                
+                <!-- THƯ MỜI TIỆC CƯỚI -->
+                <!-- <div class="hero-invitation-label">
+                    Thư Mời Tiệc Cưới
+                </div> -->
+                
+                <!-- Thời gian -->
+                <div class="hero-time-info">
+                    13:00 - Thứ 7
+                </div>
+                
+                <!-- Ngày tháng năm -->
+                <div class="hero-date-large">
+                    28.02.2026
+                </div>
+                
+                <!-- Text cuối -->
+                <div class="hero-bottom-text">
+                    <br>
+                    "Hôn nhân là chuyện cả đời
+                    <br>
+                    Yêu người vừa ý, cưới người mình thương..."
+                </div>
+            </div>
+        </section>
+
+ <!-- Invitation Section -->
+        <section class="section scroll-reveal">
+            
+            <div class="parents-layout">
+                <!-- Nhà Trai -->
+                <div class="parent-section groom-side">
+                   
+                    <div class="couple-role">
+                        <div class="parent-info-role">Chú Rể</div>
+                        <div class="name-script">Nguyên Vũ</div>
+                    </div>
+                </div>
+
+                <!-- Heart Image -->
+                <div class="heart-divider">
+                    <img src="images/tim.png" alt="Heart" class="heart-image">
+                </div>
+
+                <!-- Nhà Gái -->
+                <div class="parent-section bride-side">
+                    <div class="couple-role">
+                        <div class="parent-info-role">Cô Dâu</div>
+                        <div class="name-script">Thu Thảo</div>
+                    </div>
+                </div>
+            </div>
+
+            <img src="images/line_time.png" alt="Timeline" style="width: 100%; max-width: 800px; margin: 0 auto; display: block;">
+
+        </section>
+
+        <!-- parent info -->
+        <section class="parent-info-section scroll-reveal">
+            <div class="parent-info-container">
+                <!-- Bên trái: Ảnh chú rể -->
+                <div class="parent-info-left">
+                    <div class="parent-info-image-frame" id="groomImgFrame">
+                        <img src="images/chure.jpg" alt="Chú Rể" class="parent-info-image" loading="lazy" width="350" height="450" onload="document.getElementById('groomImgFrame').classList.add('loaded')">
+                    </div>
+                </div>
+
+                <!-- Bên phải: Nội dung chữ -->
+                <div class="parent-info-right">
+                    <!-- Phần 1: Thông tin gia đình nhà trai -->
+                    <div class="parent-info-family">
+                        <div class="parent-info-label">NHÀ TRAI</div>
+                        <br>
+                        <div class="parent-info-parent-name">Ông Lê Nguyên Văn</div>
+                        <div class="parent-info-parent-name">Bà Hoàng Thị Ngọc</div>
+                        <div class="parent-info-address">
+                            Số nhà 224 Hoằng Phú Hoằng Hóa<br>Thanh Hóa
+                        </div>
+                    </div>
+
+                    <!-- Phần 2: Tiêu đề và tên chú rể -->
+                    <div class="parent-info-couple">
+                        
+                        <div class="parent-info-groom-name">Lê Nguyên Vũ</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+         <section class="parent-info-section scroll-reveal">
+            <div class="parent-info-container">
+               
+                <!-- Bên phải: Nội dung chữ -->
+                <div class="parent-info-left">
+                    <!-- Phần 1: Thông tin gia đình nhà trai -->
+                    <div class="parent-info-family">
+                        <div class="parent-info-label">NHÀ GÁI</div>
+                        <br>
+                        <div class="parent-info-parent-name">Ông Trần Văn Cao</div>
+                        <div class="parent-info-parent-name">Bà Hoàng Thị Thủy</div>
+                        <div class="parent-info-address">
+                            xã Phạm Ngũ Lão<br>Hưng Yên
+                        </div>
+                    </div>
+
+                    <!-- Phần 2: Tiêu đề và tên chú rể -->
+                    <div class="parent-info-couple">
+                        
+                        <div class="parent-info-groom-name">Trần Thị Thu Thảo</div>
+                    </div>
+                </div>
+
+                 <!-- Bên trái: Ảnh chú rể -->
+                <div class="parent-info-right">
+                    <div class="parent-info-image-frame" id="brideImgFrame">
+                        <img src="images/codau.jpg" alt="Cô Dâu" class="parent-info-image" loading="lazy" width="350" height="450" onload="document.getElementById('brideImgFrame').classList.add('loaded')">
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+       
+
+        
+
+        <!-- Event Details -->
+        <section class="section scroll-reveal" style="padding: 0px;">
+            <div style="text-align: center; width: 100%; max-width: 450px; margin: 0px auto; padding: 0px 0px; background: #ffffff; ">
+                <div style="font-family: 'Dancing Script', cursive; font-size: 42px; font-weight: 400; color: #000000;  text-shadow: 1px 1px 2px rgba(0,0,0,0.1); margin-top: 40px;">Lễ Nạp tài</div>
+                <div style="font-family: 'Dancing Script', cursive; font-size: 18px; color: #666; margin-bottom: 10px; letter-spacing: 1px;">~ Vào Lúc ~</div>
+                <div style="font-family: 'Dancing Script', cursive; font-size: 32px; font-weight: 400; color: #000000;  text-shadow: 0 2px 4px rgba(0,0,0,0.1); line-height: 1;">9h00</div>
+                
+                <div style="display: flex; align-items: center; justify-content: center; gap: 10px; margin: 10px 0; margin-left: 40px;">
+                    <div style="font-family: 'Dancing Script', cursive; font-size: 22px; color: #333; font-weight: 600; opacity: 0; animation: slideInFromLeft 3.5s ease-out 0.5s forwards; margin-right: 20px;">Thứ 5</div>
+                    <div style="text-align: center; position: relative;">
+                        <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 90px; height: 90px; border: 3px solid #5a6946; border-radius: 50%; opacity: 0.2;"></div>
+                        <div style="font-family: 'Playfair Display', serif; font-size: 48px; font-weight: 700; line-height: 1; color: #5a6946; text-shadow: 2px 2px 4px rgba(196, 30, 58, 0.2); animation: pulse 2s ease-in-out infinite;">26</div>
+                        <div style="font-family: 'Dancing Script', cursive; font-size: 17px; margin-top: 5px; color: #666; font-weight: 500;">Tháng 2</div>
+                    </div>
+                    <div style="font-family: 'Dancing Script', cursive; font-size: 22px; color: #333; font-weight: 600; opacity: 0; animation: slideInFromRight 3.5s ease-out 0.5s forwards; margin-left: 20px;">Năm 2026</div>
+                </div>
+                
+                <div style="width: 60px; height: 2px; margin: 15px auto 10px;"></div>
+                <div style="font-family: 'Dancing Script', cursive; font-size: 16px; font-style: italic; color: #272727; margin-top: 8px;">(Ngày 10 tháng 01 năm Bính Ngọ)</div>
+                
+                
+                <!-- Countdown Timer -->
+                <div style=" border-top: 1px dashed rgba(196, 30, 58, 0.2);">
+                    <div style="font-family: 'Dancing Script', cursive; font-size: 18px; color: #666; margin-bottom: 15px;  margin-top: 30px;">Đếm ngược đến thành hôn</div>
+                    <div style="display: flex; justify-content: center; gap: 10px;">
+                        <div style="text-align: center;">
+                            <div style="width: 48px; height: 48px; display: flex; align-items: center; justify-content: center; border: 1.5px solid rgba(196, 30, 58, 0.3); border-radius: 50%; background: rgba(255, 255, 255, 0.9);">
+                                <span id="eventDays" style="font-family: 'Playfair Display', serif; font-size: 24px; font-weight: 700; color: #c41e3a;">00</span>
+                            </div>
+                            <div style="font-family: 'Dancing Script', cursive; font-size: 16px; color: #666; margin-top: 4px;">Ngày</div>
+                        </div>
+                        <div style="text-align: center;">
+                            <div style="width: 48px; height: 48px; display: flex; align-items: center; justify-content: center; border: 1.5px solid rgba(196, 30, 58, 0.3); border-radius: 50%; background: rgba(255, 255, 255, 0.9);">
+                                <span id="eventHours" style="font-family: 'Playfair Display', serif; font-size: 24px; font-weight: 700; color: #c41e3a;">00</span>
+                            </div>
+                            <div style="font-family: 'Dancing Script', cursive; font-size: 16px; color: #666; margin-top: 4px;">Giờ</div>
+                        </div>
+                        <div style="text-align: center;">
+                            <div style="width: 48px; height: 48px; display: flex; align-items: center; justify-content: center; border: 1.5px solid rgba(196, 30, 58, 0.3); border-radius: 50%; background: rgba(255, 255, 255, 0.9);">
+                                <span id="eventMinutes" style="font-family: 'Playfair Display', serif; font-size: 24px; font-weight: 700; color: #c41e3a;">00</span>
+                            </div>
+                            <div style="font-family: 'Dancing Script', cursive; font-size: 16px; color: #666; margin-top: 4px;">Phút</div>
+                        </div>
+                        <div style="text-align: center;">
+                            <div style="width: 48px; height: 48px; display: flex; align-items: center; justify-content: center; border: 1.5px solid rgba(196, 30, 58, 0.3); border-radius: 50%; background: rgba(255, 255, 255, 0.9);">
+                                <span id="eventSeconds" style="font-family: 'Playfair Display', serif; font-size: 24px; font-weight: 700; color: #c41e3a;">00</span>
+                            </div>
+                            <div style="font-family: 'Dancing Script', cursive; font-size: 16px; color: #666; margin-top: 4px;">Giây</div>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div style="font-family: 'Dancing Script', cursive; font-size: 42px; font-weight: 400; color: #000000;  text-shadow: 1px 1px 2px rgba(0,0,0,0.1); margin-top: 20px;">Lễ Thành Hôn</div>
+                <div style="font-family: 'Dancing Script', cursive; font-size: 18px; color: #666; margin-bottom: 10px; letter-spacing: 1px;">~ Vào Lúc ~</div>
+                <div style="font-family: 'Dancing Script', cursive; font-size: 32px; font-weight: 400; color: #000000;  text-shadow: 0 2px 4px rgba(0,0,0,0.1); line-height: 1;">13h00</div>
+                
+                <div style="display: flex; align-items: center; justify-content: center; gap: 10px; margin: 10px 0;">
+                    <div style="font-family: 'Dancing Script', cursive; font-size: 22px; color: #333; font-weight: 600; opacity: 0; animation: slideInFromLeft 3.5s ease-out 0.5s forwards; margin-right: 20px;">Thứ 7</div>
+                    <div style="text-align: center; position: relative;">
+                        <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 90px; height: 90px; border: 3px solid #c41e3a; border-radius: 50%; opacity: 0.2;"></div>
+                        <div style="font-family: 'Playfair Display', serif; font-size: 48px; font-weight: 700; line-height: 1; color: #c41e3a; text-shadow: 2px 2px 4px rgba(196, 30, 58, 0.2); animation: pulse 2s ease-in-out infinite;">28</div>
+                        <div style="font-family: 'Dancing Script', cursive; font-size: 17px; margin-top: 5px; color: #666; font-weight: 500;">Tháng 2</div>
+                    </div>
+                    <div style="font-family: 'Dancing Script', cursive; font-size: 22px; color: #333; font-weight: 600; opacity: 0; animation: slideInFromRight 3.5s ease-out 0.5s forwards; margin-left: 20px;">Năm 2026</div>
+                </div>
+                
+                <div style="width: 60px; height: 2px; margin: 15px auto 10px;"></div>
+                <div style="font-family: 'Dancing Script', cursive; font-size: 16px; font-style: italic; color: #272727; margin-top: 8px;">(Ngày 12 tháng 01 năm Bính Ngọ)</div>
+                
+                <!-- Calendar Section -->
+                <div style="text-align: center; margin-top: 40px; padding: 30px 20px;">
+                    <div style="background: linear-gradient(135deg, rgba(255, 255, 255, 0.98), rgba(255, 250, 250, 0.98)); border-radius: 20px; padding: 30px 25px; max-width: 500px; margin: 0 auto; box-shadow: 0 15px 50px rgba(196, 30, 58, 0.15); border: 2px solid rgba(196, 30, 58, 0.1); overflow-x: auto;">
+                        <h3 style="font-family: 'Dancing Script', cursive; font-size: 32px; color: #c41e3a; margin-bottom: 25px; font-weight: 600;">📅 Lịch Tháng 2 - 2026</h3>
+                        
+                        <table style="width: 100%; border-collapse: collapse; font-family: 'Roboto', sans-serif; table-layout: fixed;">
+                            <!-- Calendar Header -->
+                            <tr style="background: linear-gradient(135deg, #c41e3a 0%, #e91e63 100%); color: white;">
+                                <th style="padding: 12px 8px; font-size: 12px; font-weight: 700; letter-spacing: 0.5px; word-break: break-word;">Thứ 2</th>
+                                <th style="padding: 12px 8px; font-size: 12px; font-weight: 700; letter-spacing: 0.5px; word-break: break-word;">Thứ 3</th>
+                                <th style="padding: 12px 8px; font-size: 12px; font-weight: 700; letter-spacing: 0.5px; word-break: break-word;">Thứ 4</th>
+                                <th style="padding: 12px 8px; font-size: 12px; font-weight: 700; letter-spacing: 0.5px; word-break: break-word;">Thứ 5</th>
+                                <th style="padding: 12px 8px; font-size: 12px; font-weight: 700; letter-spacing: 0.5px; word-break: break-word;">Thứ 6</th>
+                                <th style="padding: 12px 8px; font-size: 12px; font-weight: 700; letter-spacing: 0.5px; color: #ffb6d9; word-break: break-word;">Thứ 7</th>
+                                <th style="padding: 12px 8px; font-size: 12px; font-weight: 700; letter-spacing: 0.5px; color: #ffb6d9; word-break: break-word;">CN</th>
+                            </tr>
+                            <!-- Week 1 -->
+                            <tr style="border-bottom: 2px solid #f0f0f0; background-color: rgba(255, 255, 255, 0.5);">
+                                <td style="padding: 10px 5px; text-align: center; color: #e0e0e0; font-size: 14px;"></td>
+                                <td style="padding: 10px 5px; text-align: center; color: #e0e0e0; font-size: 14px;"></td>
+                                <td style="padding: 10px 5px; text-align: center; color: #e0e0e0; font-size: 14px;"></td>
+                                <td style="padding: 10px 5px; text-align: center; color: #e0e0e0; font-size: 14px;"></td>
+                                <td style="padding: 10px 5px; text-align: center; color: #e0e0e0; font-size: 14px;"></td>
+                                <td style="padding: 10px 5px; text-align: center; color: #e0e0e0; font-size: 14px;"></td>
+                                <td style="padding: 10px 5px; text-align: center; font-size: 14px; font-weight: 600; color: #666;">1</td>
+                            </tr>
+                            <!-- Week 2 -->
+                            <tr style="border-bottom: 2px solid #f0f0f0;">
+                                <td style="padding: 10px 5px; text-align: center; font-size: 14px; font-weight: 500; color: #333;">2</td>
+                                <td style="padding: 10px 5px; text-align: center; font-size: 14px; font-weight: 500; color: #333;">3</td>
+                                <td style="padding: 10px 5px; text-align: center; font-size: 14px; font-weight: 500; color: #333;">4</td>
+                                <td style="padding: 10px 5px; text-align: center; font-size: 14px; font-weight: 500; color: #333;">5</td>
+                                <td style="padding: 10px 5px; text-align: center; font-size: 14px; font-weight: 500; color: #333;">6</td>
+                                <td style="padding: 10px 5px; text-align: center; font-size: 14px; font-weight: 500; color: #333;">7</td>
+                                <td style="padding: 10px 5px; text-align: center; font-size: 14px; font-weight: 600; color: #ff69b4;">8</td>
+                            </tr>
+                            <!-- Week 3 -->
+                            <tr style="border-bottom: 2px solid #f0f0f0;">
+                                <td style="padding: 10px 5px; text-align: center; font-size: 14px; font-weight: 500; color: #333;">9</td>
+                                <td style="padding: 10px 5px; text-align: center; font-size: 14px; font-weight: 500; color: #333;">10</td>
+                                <td style="padding: 10px 5px; text-align: center; font-size: 14px; font-weight: 500; color: #333;">11</td>
+                                <td style="padding: 10px 5px; text-align: center; font-size: 14px; font-weight: 500; color: #333;">12</td>
+                                <td style="padding: 10px 5px; text-align: center; font-size: 14px; font-weight: 500; color: #333;">13</td>
+                                <td style="padding: 10px 5px; text-align: center; font-size: 14px; font-weight: 500; color: #333;">14</td>
+                                <td style="padding: 10px 5px; text-align: center; font-size: 14px; font-weight: 600; color: #ff69b4;">15</td>
+                            </tr>
+                            <!-- Week 4 -->
+                            <tr style="border-bottom: 2px solid #f0f0f0;">
+                                <td style="padding: 10px 5px; text-align: center; font-size: 14px; font-weight: 500; color: #333;">16</td>
+                                <td style="padding: 10px 5px; text-align: center; font-size: 14px; font-weight: 500; color: #333;">17</td>
+                                <td style="padding: 10px 5px; text-align: center; font-size: 14px; font-weight: 500; color: #333;">18</td>
+                                <td style="padding: 10px 5px; text-align: center; font-size: 14px; font-weight: 500; color: #333;">19</td>
+                                <td style="padding: 10px 5px; text-align: center; font-size: 14px; font-weight: 500; color: #333;">20</td>
+                                <td style="padding: 10px 5px; text-align: center; font-size: 14px; font-weight: 500; color: #333;">21</td>
+                                <td style="padding: 10px 5px; text-align: center; font-size: 14px; font-weight: 600; color: #ff69b4;">22</td>
+                            </tr>
+                            <!-- Week 5 - Featured Day -->
+                            <tr style="border-bottom: 2px solid #f0f0f0;">
+                                <td style="padding: 10px 5px; text-align: center; font-size: 14px; font-weight: 500; color: #333;">23</td>
+                                <td style="padding: 10px 5px; text-align: center; font-size: 14px; font-weight: 500; color: #333;">24</td>
+                                <td style="padding: 10px 5px; text-align: center; font-size: 14px; font-weight: 500; color: #333;">25</td>
+                                <td style="padding: 10px 5px; text-align: center; font-size: 14px; font-weight: 500; color: #333;">26</td>
+                                <td style="padding: 10px 5px; text-align: center; font-size: 14px; font-weight: 500; color: #333;">27</td>
+                                <!-- The Special Day - 28/02 -->
+                                <td style="padding: 8px 4px; text-align: center; position: relative; animation: pulse-highlight 2s infinite; background: rgba(196, 30, 58, 0.05);">
+                                    <div style="position: relative; width: 50px; height: 50px; margin: 0 auto; display: flex; align-items: center; justify-content: center;">
+                                        <div style="position: absolute; width: 55px; height: 55px; border: 3px solid #c41e3a; border-radius: 50%; animation: rotate-ring 3s linear infinite; opacity: 0.7;"></div>
+                                        <div style="position: absolute; width: 60px; height: 60px; border: 1.5px dashed #e91e63; border-radius: 50%; animation: rotate-ring-reverse 4s linear infinite; opacity: 0.5;"></div>
+                                        <div style="position: relative; z-index: 3; font-size: 18px; font-weight: 800; color: #c41e3a;">28</div>
+                                    </div>
+                                </td>
+                                <td style="padding: 10px 5px; text-align: center; font-size: 14px; font-weight: 600; color: #ff69b4;">1/3</td>
+                            </tr>
+                        </table>
+                        <style>
+                            @keyframes pulse-highlight {
+                                0%, 100% { transform: scale(1); }
+                                50% { transform: scale(1.08); }
+                            }
+                            @keyframes rotate-ring {
+                                0% { transform: rotate(0deg); }
+                                100% { transform: rotate(360deg); }
+                            }
+                            @keyframes rotate-ring-reverse {
+                                0% { transform: rotate(360deg); }
+                                100% { transform: rotate(0deg); }
+                            }
+                        </style>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+      
+ <!-- Location Section -->
+        <section class="section scroll-reveal" style="padding: 60px 20px !important;">
+            <div style="text-align: center; max-width: 600px; margin: 0 auto;">
+                <h2 style="font-family: 'Dancing Script', cursive; font-size: 28px; color: #c41e3a; margin-bottom: 15px;">📍 Địa điểm nhà chủ rể : </h2>
+                <h3 style="font-family: 'Playfair Display', cursive; font-size: 16px; font-weight: 600; color: #333; letter-spacing: 1px; margin-bottom: 30px;"> Số nhà 224 Hoằng Phú Hoằng Hóa, Thanh Hóa</h3>
+                
+                <div style="padding: 25px; border-radius: 20px; box-shadow: 0 10px 35px rgba(196,30,58,0.15); margin-bottom: 20px; background: linear-gradient(135deg, rgba(255,255,255,0.98), rgba(255,250,250,0.95));">
+                    
+                    <div style="width: 100%; height: 300px; border-radius: 15px; overflow: hidden; margin-bottom: 20px; box-shadow: 0 5px 20px rgba(0,0,0,0.1);">
+                        <img src="images/mapchure.jpg" alt="Nhà chủ rể - Thanh Hóa" style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                    
+                    <a href="https://www.google.com/maps/@19.911205,105.7957893,15z/data=!3m1!4b1!4m5!7m4!1m2!1s102508867369777567180!2sChZQYkVGT0RDMlRldXJJYXhsbXcyZnR3EggHBkrIFyrVGA%3D%3D!2e2?hl=vi&entry=ttu&g_ep=EgoyMDI2MDIxMS4wIKXMDSoASAFQAw%3D%3D" target="_blank" style="display: inline-block; background: linear-gradient(135deg, #c41e3a, #e91e63); color: #fff; padding: 14px 35px; border-radius: 50px; text-decoration: none; font-family: 'Dancing Script', cursive; font-size: 16px; font-weight: 600; transition: all 0.3s; box-shadow: 0 6px 20px rgba(196, 30, 58, 0.3); letter-spacing: 0.5px;" onmouseover="this.style.transform='translateY(-3px)'; this.style.boxShadow='0 10px 30px rgba(196, 30, 58, 0.4)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 6px 20px rgba(196, 30, 58, 0.3)'">📍 XEM TRÊN GOOGLE MAP</a>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Location Section -->
+        <section class="section scroll-reveal" style="padding: 60px 20px !important; background: linear-gradient(135deg, rgba(255,250,250,0.98), rgba(255,255,255,0.95));">
+            <div style="text-align: center; max-width: 600px; margin: 0 auto;">
+                <h2 style="font-family: 'Dancing Script', cursive; font-size: 28px; color: #c41e3a; margin-bottom: 15px;">📍 Địa điểm nhà cô dâu : </h2>
+                <h3 style="font-family: 'Playfair Display', cursive; font-size: 14px; font-weight: 600; color: #000; letter-spacing: 1px;">xã Phạm Ngũ Lão, Hưng Yên</h3>
+                
+                <div style=" padding: 20px; border-radius: 15px; box-shadow: 0 4px 20px rgba(0,0,0,0.1); margin-bottom: 10px;">
+                    
+                    <div style="width: 100%; height: 300px; border-radius: 15px; overflow: hidden; margin-bottom: 20px; box-shadow: 0 5px 20px rgba(0,0,0,0.1);">
+                        <img src="images/mapcodau.jpg" alt="Nhà cô dâu - Hưng Yên" style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                    
+                    <a href="https://www.google.com/maps?q=20.8671958,106.0750473&entry=gps&shh=CAE&lucs=,94297699,94275415,94284457,94231188,94280568,47071704,94266209,94218641,94282134,94286869&g_ep=CAISEjI2LjA2LjIuODY0NDM1MTkzMBgAIPCqBypaLDk0Mjk3Njk5LDk0Mjc1NDE1LDk0Mjg0NDU3LDk0MjMxMTg4LDk0MjgwNTY4LDQ3MDcxNzA0LDk0MjY2MjA5LDk0MjE4NjQxLDk0MjgyMTM0LDk0Mjg2ODY5QgJWTg%3D%3D&skid=f9706997-0d7e-4cc2-a713-e14f1798ce8c&g_st=ic" target="_blank" style="display: inline-block; background: linear-gradient(135deg, #c41e3a, #e91e63); color: #fff; padding: 14px 35px; border-radius: 50px; text-decoration: none; font-family: 'Dancing Script', cursive; font-size: 16px; font-weight: 600; transition: all 0.3s; box-shadow: 0 6px 20px rgba(196, 30, 58, 0.3); letter-spacing: 0.5px;" onmouseover="this.style.transform='translateY(-3px)'; this.style.boxShadow='0 10px 30px rgba(196, 30, 58, 0.4)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 6px 20px rgba(196, 30, 58, 0.3)'">📍 XEM TRÊN GOOGLE MAP</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery Section -->
+        <section class="section scroll-reveal" style="padding: 80px 20px !important; background: linear-gradient(135deg, rgba(255, 250, 250, 0.98), rgba(255, 255, 255, 0.95));">
+            <h2 class="section-title"></h2>
+            <div style="text-align: center; width: 100%; max-width: 900px; margin: 0 auto 60px;">
+                <div style="font-family: 'Dancing Script', cursive; font-size: 42px; color: #c41e3a; font-weight: 600; margin-bottom: 30px; animation: fadeInDown 0.8s ease-out;">💕 Album Ảnh Cưới 💕</div>
+                <div style="position: relative; width: 100%; max-width: 500px; margin: 0 auto; border-radius: 15px; overflow: hidden; box-shadow: 0 15px 50px rgba(196, 30, 58, 0.2); transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1); animation: slideInUp 0.8s ease-out;">
+                    <img src="images/album_anh_cuoi.png" alt="Album ảnh cưới" style="width: 100%; height: auto; display: block; transition: transform 0.5s ease;">
+                </div>
+            </div>
+            
+            <div class="gallery-grid" style="padding: 40px 20px; display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px; max-width: 1400px; margin: 0 auto;">
+                <div class="gallery-item" onclick="openLightbox(0)" style="cursor: pointer; border-radius: 12px; overflow: hidden; box-shadow: 0 8px 25px rgba(0,0,0,0.12); transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); position: relative;">
+                    <img src="images/1(1).jpg" alt="Ảnh cưới 1" loading="lazy" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease;">
+                    <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(196, 30, 58, 0.7); opacity: 0; transition: opacity 0.3s ease; display: flex; align-items: center; justify-content: center; color: white; font-size: 30px;">🔍</div>
+                </div>
+                <div class="gallery-item" onclick="openLightbox(1)" style="cursor: pointer; border-radius: 12px; overflow: hidden; box-shadow: 0 8px 25px rgba(0,0,0,0.12); transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); position: relative;">
+                    <img src="images/1(2).jpg" alt="Ảnh cưới 2" loading="lazy" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease;">
+                    <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(196, 30, 58, 0.7); opacity: 0; transition: opacity 0.3s ease; display: flex; align-items: center; justify-content: center; color: white; font-size: 30px;">🔍</div>
+                </div>
+                <div class="gallery-item" onclick="openLightbox(2)" style="cursor: pointer; border-radius: 12px; overflow: hidden; box-shadow: 0 8px 25px rgba(0,0,0,0.12); transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); position: relative;">
+                    <img src="images/1(3).jpg" alt="Ảnh cưới 3" loading="lazy" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease;">
+                    <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(196, 30, 58, 0.7); opacity: 0; transition: opacity 0.3s ease; display: flex; align-items: center; justify-content: center; color: white; font-size: 30px;">🔍</div>
+                </div>
+                <div class="gallery-item" onclick="openLightbox(3)" style="cursor: pointer; border-radius: 12px; overflow: hidden; box-shadow: 0 8px 25px rgba(0,0,0,0.12); transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); position: relative;">
+                    <img src="images/1(4).jpg" alt="Ảnh cưới 4" loading="lazy" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease;">
+                    <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(196, 30, 58, 0.7); opacity: 0; transition: opacity 0.3s ease; display: flex; align-items: center; justify-content: center; color: white; font-size: 30px;">🔍</div>
+                </div>
+                <div class="gallery-item" onclick="openLightbox(4)" style="cursor: pointer; border-radius: 12px; overflow: hidden; box-shadow: 0 8px 25px rgba(0,0,0,0.12); transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); position: relative;">
+                    <img src="images/1(5).jpg" alt="Ảnh cưới 5" loading="lazy" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease;">
+                    <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(196, 30, 58, 0.7); opacity: 0; transition: opacity 0.3s ease; display: flex; align-items: center; justify-content: center; color: white; font-size: 30px;">🔍</div>
+                </div>
+                <div class="gallery-item" onclick="openLightbox(5)" style="cursor: pointer; border-radius: 12px; overflow: hidden; box-shadow: 0 8px 25px rgba(0,0,0,0.12); transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); position: relative;">
+                    <img src="images/1(6).jpg" alt="Ảnh cưới 6" loading="lazy" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease;">
+                    <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(196, 30, 58, 0.7); opacity: 0; transition: opacity 0.3s ease; display: flex; align-items: center; justify-content: center; color: white; font-size: 30px;">🔍</div>
+                </div>
+                <div class="gallery-item" onclick="openLightbox(6)" style="cursor: pointer; border-radius: 12px; overflow: hidden; box-shadow: 0 8px 25px rgba(0,0,0,0.12); transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); position: relative;">
+                    <img src="images/1(7).jpg" alt="Ảnh cưới 7" loading="lazy" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease;">
+                    <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(196, 30, 58, 0.7); opacity: 0; transition: opacity 0.3s ease; display: flex; align-items: center; justify-content: center; color: white; font-size: 30px;">🔍</div>
+                </div>
+                <div class="gallery-item" onclick="openLightbox(7)" style="cursor: pointer; border-radius: 12px; overflow: hidden; box-shadow: 0 8px 25px rgba(0,0,0,0.12); transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); position: relative;">
+                    <img src="images/1(8).jpg" alt="Ảnh cưới 8" loading="lazy" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease;">
+                    <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(196, 30, 58, 0.7); opacity: 0; transition: opacity 0.3s ease; display: flex; align-items: center; justify-content: center; color: white; font-size: 30px;">🔍</div>
+                </div>
+                <div class="gallery-item" onclick="openLightbox(8)" style="cursor: pointer; border-radius: 12px; overflow: hidden; box-shadow: 0 8px 25px rgba(0,0,0,0.12); transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); position: relative;">
+                    <img src="images/1(9).jpg" alt="Ảnh cưới 9" loading="lazy" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease;">
+                    <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(196, 30, 58, 0.7); opacity: 0; transition: opacity 0.3s ease; display: flex; align-items: center; justify-content: center; color: white; font-size: 30px;">🔍</div>
+                </div>
+                <div class="gallery-item" onclick="openLightbox(9)" style="cursor: pointer; border-radius: 12px; overflow: hidden; box-shadow: 0 8px 25px rgba(0,0,0,0.12); transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); position: relative;">
+                    <img src="images/1(10).jpg" alt="Ảnh cưới 10" loading="lazy" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease;">
+                    <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(196, 30, 58, 0.7); opacity: 0; transition: opacity 0.3s ease; display: flex; align-items: center; justify-content: center; color: white; font-size: 30px;">🔍</div>
+                </div>
+                <div class="gallery-item" onclick="openLightbox(10)" style="cursor: pointer; border-radius: 12px; overflow: hidden; box-shadow: 0 8px 25px rgba(0,0,0,0.12); transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); position: relative;">
+                    <img src="images/1(11).jpg" alt="Ảnh cưới 11" loading="lazy" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease;">
+                    <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(196, 30, 58, 0.7); opacity: 0; transition: opacity 0.3s ease; display: flex; align-items: center; justify-content: center; color: white; font-size: 30px;">🔍</div>
+                </div>
+                <div class="gallery-item" onclick="openLightbox(11)" style="cursor: pointer; border-radius: 12px; overflow: hidden; box-shadow: 0 8px 25px rgba(0,0,0,0.12); transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); position: relative;">
+                    <img src="images/1(12).jpg" alt="Ảnh cưới 12" loading="lazy" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease;">
+                    <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(196, 30, 58, 0.7); opacity: 0; transition: opacity 0.3s ease; display: flex; align-items: center; justify-content: center; color: white; font-size: 30px;">🔍</div>
+                </div>
+                <div class="gallery-item" onclick="openLightbox(12)" style="cursor: pointer; border-radius: 12px; overflow: hidden; box-shadow: 0 8px 25px rgba(0,0,0,0.12); transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); position: relative;">
+                    <img src="images/1(13).jpg" alt="Ảnh cưới 13" loading="lazy" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease;">
+                    <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(196, 30, 58, 0.7); opacity: 0; transition: opacity 0.3s ease; display: flex; align-items: center; justify-content: center; color: white; font-size: 30px;">🔍</div>
+                </div>
+                <div class="gallery-item" onclick="openLightbox(13)" style="cursor: pointer; border-radius: 12px; overflow: hidden; box-shadow: 0 8px 25px rgba(0,0,0,0.12); transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); position: relative;">
+                    <img src="images/1(6).jpg" alt="Ảnh cưới 14" loading="lazy" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease;">
+                    <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(196, 30, 58, 0.7); opacity: 0; transition: opacity 0.3s ease; display: flex; align-items: center; justify-content: center; color: white; font-size: 30px;">🔍</div>
+                </div>
+            </div>
+
+            <style>
+                .gallery-item:hover {
+                    transform: translateY(-12px) scale(1.02);
+                    box-shadow: 0 20px 45px rgba(196, 30, 58, 0.25) !important;
+                }
+
+                .gallery-item:hover img {
+                    transform: scale(1.15) rotate(2deg);
+                }
+
+                .gallery-item:hover > div {
+                    opacity: 1 !important;
+                }
+
+                @media (max-width: 768px) {
+                    .gallery-grid {
+                        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+                        gap: 15px;
+                    }
+                }
+
+                @media (max-width: 480px) {
+                    .gallery-grid {
+                        grid-template-columns: repeat(2, 1fr);
+                        gap: 12px;
+                        padding: 20px 10px;
+                    }
+                }
+
+                @keyframes fadeInDown {
+                    from {
+                        opacity: 0;
+                        transform: translateY(-20px);
+                    }
+                    to {
+                        opacity: 1;
+                        transform: translateY(0);
+                    }
+                }
+
+                @keyframes slideInUp {
+                    from {
+                        opacity: 0;
+                        transform: translateY(30px);
+                    }
+                    to {
+                        opacity: 1;
+                        transform: translateY(0);
+                    }
+                }
+            </style>
+        </section>
+        
+        <!-- Image before Footer -->
+        <!-- <div style="text-align: center; width: 100%; margin: 20px auto; cursor: pointer;" onclick="openLightboxSingle('images/2.jpg')">
+            <img src="images/2.jpg" alt="Wedding" style="width: 100%; max-width: 800px; height: auto; display: block; margin: 0 auto; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); transition: transform 0.3s, box-shadow 0.3s;" onmouseover="this.style.transform='scale(1.02)'; this.style.boxShadow='0 8px 25px rgba(196, 30, 58, 0.3)';" onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 4px 15px rgba(0,0,0,0.1)';">
+        </div> -->
+
+        <section class="section scroll-reveal">
+            <div style="text-align: center; padding: 40px 20px;">
+                <h2 style="font-family: 'Dancing Script', cursive; font-size: 32px; color: #c41e3a; margin-bottom: 30px;">Gửi Mừng Cưới</h2>
+                
+                <div style="display: flex; flex-direction: column; gap: 20px; max-width: 400px; margin: 0 auto;">
+                    <!-- Button Mừng Cưới Chú Rể -->
+                    <button onclick="openGroomGift()" style="background: linear-gradient(135deg, #5a6946 0%, #7a8a66 100%); color: #fff; padding: 18px 40px; border: none; border-radius: 50px; font-family: 'Dancing Script', cursive; font-size: 20px; font-weight: 600; cursor: pointer; box-shadow: 0 8px 25px rgba(90, 105, 70, 0.35); transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); display: flex; align-items: center; justify-content: center; gap: 10px; letter-spacing: 0.5px;" onmouseover="this.style.transform='translateY(-4px)'; this.style.boxShadow='0 12px 35px rgba(90, 105, 70, 0.45)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 8px 25px rgba(90, 105, 70, 0.35)'">
+                        <span>💐</span>
+                        <span>Gửi Mừng Cưới Chú Rể</span>
+                    </button>
+                    
+                    <!-- Button Mừng Cưới Cô Dâu -->
+                    <button onclick="openBrideGift()" style="background: linear-gradient(135deg, #e91e63 0%, #c2185b 100%); color: #fff; padding: 18px 40px; border: none; border-radius: 50px; font-family: 'Dancing Script', cursive; font-size: 20px; font-weight: 600; cursor: pointer; box-shadow: 0 8px 25px rgba(233, 30, 99, 0.35); transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); display: flex; align-items: center; justify-content: center; gap: 10px; letter-spacing: 0.5px;" onmouseover="this.style.transform='translateY(-4px)'; this.style.boxShadow='0 12px 35px rgba(233, 30, 99, 0.45)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 8px 25px rgba(233, 30, 99, 0.35)'">
+                        <span>💐</span>
+                        <span>Gửi Mừng Cưới Cô Dâu</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer" style="padding: 100px 20px 60px 20px; background: linear-gradient(135deg, rgba(255,255,255,0.99), rgba(255,250,250,0.99)); text-align: center; border-top: 2px solid rgba(196, 30, 58, 0.1);">
+            
+            <!-- Decorative Line Top -->
+            <div style="width: 80px; height: 2px; background: linear-gradient(90deg, transparent, #c41e3a, transparent); margin: 0 auto 40px auto; animation: slideInLeft 0.8s ease-out;"></div>
+            
+            <!-- Wedding Date removed as requested -->
+            
+
+
+      
+            <!-- Decorative Line Bottom -->
+            <div style="width: 80px; height: 2px; background: linear-gradient(90deg, transparent, #5a6946, transparent); margin: 40px auto 30px auto; animation: slideInRight 0.8s ease-out 0.5s backwards;"></div>
+
+            <!-- Wishes Section - Sổ Lời Chúc -->
+            <section style="padding: 40px 20px; max-width: 900px; margin: 0 auto;">
+                <h3 style="font-family: 'Dancing Script', cursive; font-size: 32px; color: #c41e3a; margin-bottom: 16px; text-align: center;">📖 Sổ Lời Chúc</h3>
+                <p style="color: #666; margin-bottom: 24px; text-align: center; font-size: 16px;">Gửi lời chúc tốt đẹp đến cô dâu chú rể — lời chúc sẽ hiển thị ngay phía dưới 💕</p>
+
+                <!-- Wishes Form -->
+                <form id="wish-form" style="
+                    display: flex;
+                    flex-direction: column;
+                    gap: 12px;
+                    max-width: 600px;
+                    margin: 0 auto 30px auto;
+                    background: linear-gradient(135deg, rgba(196, 30, 58, 0.03) 0%, rgba(255, 255, 255, 0.3) 100%);
+                    padding: 24px;
+                    border-radius: 16px;
+                    border: 2px solid rgba(196, 30, 58, 0.1);
+                    box-shadow: 0 4px 15px rgba(196, 30, 58, 0.08);
+                ">
+                    <input 
+                        name="name" 
+                        type="text" 
+                        placeholder="👤 Tên của bạn (tùy chọn)" 
+                        style="
+                            padding: 12px 16px;
+                            border-radius: 10px;
+                            border: 1.5px solid #ddd;
+                            font-size: 15px;
+                            font-family: 'Roboto', sans-serif;
+                            transition: all 0.3s ease;
+                        "
+                        onfocus="this.style.borderColor='#c41e3a'; this.style.boxShadow='0 0 8px rgba(196, 30, 58, 0.2)'"
+                        onblur="this.style.borderColor='#ddd'; this.style.boxShadow='none'"
+                    />
+                    <textarea 
+                        name="message" 
+                        rows="3" 
+                        placeholder="💌 Lời chúc của bạn (tối đa 300 ký tự)" 
+                        required 
+                        style="
+                            padding: 12px 16px;
+                            border-radius: 10px;
+                            border: 1.5px solid #ddd;
+                            font-size: 15px;
+                            font-family: 'Roboto', sans-serif;
+                            resize: vertical;
+                            min-height: 80px;
+                            transition: all 0.3s ease;
+                        "
+                        onfocus="this.style.borderColor='#c41e3a'; this.style.boxShadow='0 0 8px rgba(196, 30, 58, 0.2)'"
+                        onblur="this.style.borderColor='#ddd'; this.style.boxShadow='none'"
+                    ></textarea>
+                    <button 
+                        type="submit" 
+                        style="
+                            background: linear-gradient(135deg, #c41e3a 0%, #a01629 100%);
+                            color: #fff;
+                            padding: 14px 24px;
+                            border-radius: 25px;
+                            border: none;
+                            cursor: pointer;
+                            font-weight: 600;
+                            font-size: 16px;
+                            transition: all 0.3s ease;
+                            box-shadow: 0 4px 12px rgba(196, 30, 58, 0.3);
+                        "
+                        onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 6px 16px rgba(196, 30, 58, 0.4)'"
+                        onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 12px rgba(196, 30, 58, 0.3)'"
+                    >💌 Gửi Lời Chúc</button>
+                </form>
+
+                <!-- Wishes Display Container -->
+                <div style="max-width: 700px; margin: 0 auto;">
+                    <h4 style="color: #c41e3a; margin-bottom: 16px; font-size: 18px; font-weight: 600;">✨ Lời Chúc Từ Khách Mời</h4>
+                    <div class="wishes-list" style="
+                        display: flex;
+                        flex-direction: column;
+                        gap: 12px;
+                        max-height: 600px;
+                        overflow-y: auto;
+                        padding-right: 8px;
+                    ">
+                        <p style="color: #999; text-align: center; padding: 20px;">⏳ Đang tải lời chúc...</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Animations for wishes -->
+            <style>
+                @keyframes slideInUp {
+                    from {
+                        opacity: 0;
+                        transform: translateY(10px);
+                    }
+                    to {
+                        opacity: 1;
+                        transform: translateY(0);
+                    }
+                }
+                
+                .wishes-list {
+                    scrollbar-width: thin;
+                    scrollbar-color: #c41e3a rgba(196, 30, 58, 0.1);
+                }
+                
+                .wishes-list::-webkit-scrollbar {
+                    width: 6px;
+                }
+                
+                .wishes-list::-webkit-scrollbar-track {
+                    background: rgba(196, 30, 58, 0.05);
+                    border-radius: 10px;
+                }
+                
+                .wishes-list::-webkit-scrollbar-thumb {
+                    background: #c41e3a;
+                    border-radius: 10px;
+                }
+                
+                .wishes-list::-webkit-scrollbar-thumb:hover {
+                    background: #a01629;
+                }
+            </style>
+               
+            </style>
+        </footer>
+    </div>
+
+    <!-- Music Toggle Button -->
+    <div class="music-toggle" id="musicToggle" title="Bật/Tắt nhạc">
+        <img id="musicIcon" src="https://content.pancake.vn/1/02/d4/a7/88/fef5132f979892c1778a688f2039942fc24b396b332750179775f87e-w:200-h:200-l:8183-t:image/png.png" alt="Music">
+    </div>
+    <audio id="bgMusic" loop preload="auto" muted>
+        <source src="audio/I_Do.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- Gift Popups -->
+    <!-- Popup Chú Rể -->
+    <div class="gift-popup" id="groomGiftPopup">
+        <div class="gift-content">
+            <div class="gift-close" onclick="closeGroomGift()">×</div>
+            <h3 style="font-family: 'Dancing Script', cursive; font-size: 28px; color: #c41e3a; margin-bottom: 20px;">Gửi Mừng Cưới Chú Rể</h3>
+            <div class="bank-card" >
+                <div style="margin-bottom: 20px; text-align: center;">
+                    <img src="images/qrtrai.jpeg" alt="QR Code Chú Rể" style="width: 250px; height: 250px; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.2);">
+                </div>
+                <p style="font-size: 14px; color: #000000;">Ngân hàng</p>
+                <p style="font-size: 18px; color: #000000;">TP BANK</p>
+                <p class="account-number" id="groomAccount" style="color: #000000; font-weight: 700; font-size: 24px;">03837710401</p>
+                <p style="font-size: 18px; color: #000000;">LÊ NGUYÊN VŨ</p>
+                <button onclick="copyGroomAccount()" style="background: transparent; color: #000000; padding: 10px 30px; border: 2px solid #000000; border-radius: 25px; font-family: 'Dancing Script', cursive; font-size: 16px; cursor: pointer; margin-top: 15px; font-weight: 600;">📋 Sao chép STK</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Popup Cô Dâu -->
+    <div class="gift-popup" id="brideGiftPopup">
+        <div class="gift-content">
+            <div class="gift-close" onclick="closeBrideGift()">×</div>
+            <h3 style="font-family: 'Dancing Script', cursive; font-size: 28px; color: #e91e63; margin-bottom: 20px;">GửiMừng Cưới Cô Dâu</h3>
+            <div class="bank-card" >
+                <div style="margin-bottom: 20px; text-align: center;">
+                    <img src="images/qrgai.jpeg" alt="QR Code Cô Dâu" style="width: 250px; height: 250px; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.2);">
+                </div>
+                <p style="font-size: 14px; color: #000000;">Ngân hàng</p>
+                <p style="font-size: 18px; color: #000000;">TPBank</p>
+                <p class="account-number" id="brideAccount" style="color: #000000; font-weight: 700; font-size: 24px;">03837758601</p>
+                <p style="font-size: 18px; color: #000000;">TRẦN THỊ THU THẢO</p>
+                <button onclick="copyBrideAccount()" style="background: transparent; color: #000000; padding: 10px 30px; border: 2px solid #000000; border-radius: 25px; font-family: 'Dancing Script', cursive; font-size: 16px; cursor: pointer; margin-top: 15px; font-weight: 600;">📋 Sao chép STK</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // ===================================
+        // COUNTDOWN TIMER
+        // ===================================
+        const weddingDate = new Date('2026-02-28T13:00:00').getTime();
+
+        // ===================================
+        // MUSIC PLAYER
+        // ===================================
+        const musicToggle = document.querySelector('.music-toggle');
+        const musicIcon = document.getElementById('musicIcon');
+        const audio = document.getElementById('bgMusic');
+        const ICON_ON = 'https://content.pancake.vn/1/02/d4/a7/88/fef5132f979892c1778a688f2039942fc24b396b332750179775f87e-w:200-h:200-l:8183-t:image/png.png';
+        const ICON_OFF = 'https://via.placeholder.com/50?text=🔇';
+        let isPlaying = false;
+
+        if (musicToggle) {
+            musicToggle.addEventListener('click', () => {
+                if (isPlaying) {
+                    audio.pause();
+                    musicIcon.src = ICON_OFF;
+                    isPlaying = false;
+                } else {
+                    audio.muted = false;
+                    audio.play().catch(err => console.log('Play failed:', err));
+                    musicIcon.src = ICON_ON;
+                    isPlaying = true;
+                }
+            });
+        }
+
+        // Auto-play on first interaction
+        function enableAutoPlay() {
+            if (!isPlaying && audio) {
+                audio.muted = false;
+                audio.play()
+                    .then(() => {
+                        if (musicIcon) musicIcon.src = ICON_ON;
+                        isPlaying = true;
+                    })
+                    .catch(err => console.log('Auto-play prevented:', err));
+            }
+        }
+
+        document.addEventListener('click', enableAutoPlay);
+        document.addEventListener('touchstart', enableAutoPlay);
+
+        // ===================================
+        // GIFT POPUP FUNCTIONS
+        // ===================================
+        function openGroomGift() {
+            document.getElementById('groomGiftPopup').style.display = 'flex';
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeGroomGift() {
+            document.getElementById('groomGiftPopup').style.display = 'none';
+            document.body.style.overflow = 'auto';
+        }
+
+        function openBrideGift() {
+            document.getElementById('brideGiftPopup').style.display = 'flex';
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeBrideGift() {
+            document.getElementById('brideGiftPopup').style.display = 'none';
+            document.body.style.overflow = 'auto';
+        }
+
+        function copyGroomAccount() {
+            const text = document.getElementById('groomAccount').innerText;
+            navigator.clipboard.writeText(text).then(() => {
+                alert('✅ Đã sao chép: ' + text);
+            });
+        }
+
+        function copyBrideAccount() {
+            const text = document.getElementById('brideAccount').innerText;
+            navigator.clipboard.writeText(text).then(() => {
+                alert('✅ Đã sao chép: ' + text);
+            });
+        }
+
+        // ===================================
+        // SMOOTH SCROLL
+        // ===================================
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth' });
+                }
+            });
+        });
+
+        // ===================================
+        // IMAGE OPTIMIZATION
+        // ===================================
+        window.addEventListener('load', () => {
+            const images = document.querySelectorAll('img[loading="lazy"]');
+            images.forEach(img => {
+                img.addEventListener('load', function() {
+                    this.classList.add('loaded');
+                });
+            });
+        });
+
+        // Hardware acceleration
+        document.querySelectorAll('.gallery-item, .parent-info-image-frame, .gallery-grid').forEach(el => {
+            el.style.transform = 'translateZ(0)';
+            el.style.willChange = 'transform';
+        });
+    </script>
+    <script>
+        function updateEventCountdown() {
+            const now = new Date().getTime();
+            const distance = weddingDate - now;
+            
+            if (distance < 0) {
+                document.getElementById('eventDays').textContent = '00';
+                document.getElementById('eventHours').textContent = '00';
+                document.getElementById('eventMinutes').textContent = '00';
+                document.getElementById('eventSeconds').textContent = '00';
+                return;
+            }
+            
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            document.getElementById('eventDays').textContent = String(days).padStart(2, '0');
+            document.getElementById('eventHours').textContent = String(hours).padStart(2, '0');
+            document.getElementById('eventMinutes').textContent = String(minutes).padStart(2, '0');
+            document.getElementById('eventSeconds').textContent = String(seconds).padStart(2, '0');
+        }
+        
+        setInterval(updateEventCountdown, 1000);
+        updateEventCountdown();
+
+        // Music Toggle - using variables from first script block
+        
+        musicToggle.addEventListener('click', async () => {
+            try {
+                if (isPlaying) {
+                    audio.pause();
+                    musicIcon.src = ICON_OFF;
+                } else {
+                    await audio.play();
+                    musicIcon.src = ICON_ON;
+                }
+                isPlaying = !isPlaying;
+            } catch (err) {
+                console.warn('Không thể phát nhạc:', err);
+            }
+        });
+        
+        // Auto play music
+        function tryAutoPlayMusic() {
+            if (!isPlaying) {
+                audio.play()
+                    .then(() => {
+                        musicIcon.src = ICON_ON;
+                        isPlaying = true;
+                    })
+                    .catch(() => {});
+            }
+        }
+        
+        // Lightbox Gallery
+        function openLightbox(index) {
+            currentImageIndex = index;
+            document.getElementById('lightboxImg').src = galleryImages[index];
+            document.getElementById('lightbox').classList.add('active');
+        }
+        
+        function openLightboxSingle(imageSrc) {
+            document.getElementById('lightboxImg').src = imageSrc;
+            document.getElementById('lightbox').classList.add('active');
+        }
+        
+        function closeLightbox() {
+            document.getElementById('lightbox').classList.remove('active');
+        }
+        
+        function changeImage(direction) {
+            currentImageIndex += direction;
+            if (currentImageIndex < 0) currentImageIndex = galleryImages.length - 1;
+            if (currentImageIndex >= galleryImages.length) currentImageIndex = 0;
+            document.getElementById('lightboxImg').src = galleryImages[currentImageIndex];
+        }
+        
+        // Touch swipe support for lightbox
+        let touchStartX = 0;
+        let touchEndX = 0;
+        const lightboxContent = document.querySelector('.lightbox-content');
+        
+        lightboxContent.addEventListener('touchstart', (e) => {
+            touchStartX = e.changedTouches[0].screenX;
+        }, { passive: true });
+        
+        lightboxContent.addEventListener('touchend', (e) => {
+            touchEndX = e.changedTouches[0].screenX;
+            handleSwipe();
+        }, { passive: true });
+        
+        function handleSwipe() {
+            const swipeThreshold = 50;
+            const diff = touchStartX - touchEndX;
+            
+            if (Math.abs(diff) > swipeThreshold) {
+                if (diff > 0) {
+                    // Swipe left - next image
+                    changeImage(1);
+                } else {
+                    // Swipe right - previous image
+                    changeImage(-1);
+                }
+            }
+        }
+        
+        // Close lightbox on background click
+        document.getElementById('lightbox').addEventListener('click', (e) => {
+            if (e.target.id === 'lightbox') closeLightbox();
+        });
+        
+        // Keyboard navigation
+        document.addEventListener('keydown', (e) => {
+            const lightbox = document.getElementById('lightbox');
+            if (lightbox.classList.contains('active')) {
+                if (e.key === 'Escape') closeLightbox();
+                if (e.key === 'ArrowLeft') changeImage(-1);
+                if (e.key === 'ArrowRight') changeImage(1);
+            }
+        });
+        
+        // Gift Popup - Chú Rể
+        function openGroomGift() {
+            document.getElementById('groomGiftPopup').classList.add('active');
+        }
+        
+        function closeGroomGift() {
+            document.getElementById('groomGiftPopup').classList.remove('active');
+        }
+        
+        function copyGroomAccount() {
+            const account = '6860129096666'; // Thay số tài khoản thật của chú rể
+            navigator.clipboard.writeText(account).then(() => {
+                alert('✅ Đã sao chép số tài khoản chú rể: ' + account);
+            }).catch(() => {
+                alert('❌ Không thể sao chép. Số TK: ' + account);
+            });
+        }
+
+        // Gift Popup - Cô Dâu
+        function openBrideGift() {
+            document.getElementById('brideGiftPopup').classList.add('active');
+        }
+        
+        function closeBrideGift() {
+            document.getElementById('brideGiftPopup').classList.remove('active');
+        }
+        
+        function copyBrideAccount() {
+            const account = '0356258333'; // Thay số tài khoản thật của cô dâu
+            navigator.clipboard.writeText(account).then(() => {
+                alert('✅ Đã sao chép số tài khoản cô dâu: ' + account);
+            }).catch(() => {
+                alert('❌ Không thể sao chép. Số TK: ' + account);
+            });
+        }
+
+        // Đóng popup khi click ra ngoài
+        document.addEventListener('click', function(e) {
+            if (e.target.classList.contains('gift-popup')) {
+                e.target.classList.remove('active');
+            }
+        });
+        
+        // Scroll Reveal Animation
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -100px 0px'
+        };
+        
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                }
+            });
+        }, observerOptions);
+        
+        document.querySelectorAll('.scroll-reveal').forEach(el => {
+            observer.observe(el);
+        });
+        
+        // Gallery Grid Animation - Fade in slide up
+        const galleryGridObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    galleryGridObserver.unobserve(entry.target);
+                }
+            });
+        }, {
+            threshold: 0.1,
+            rootMargin: '0px 0px -100px 0px'
+        });
+        
+        const galleryGrid = document.querySelector('.gallery-grid');
+        if (galleryGrid) {
+            galleryGridObserver.observe(galleryGrid);
+        }
+        
+        // Gallery Items Animation - Fade in + Scale
+        const galleryObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    // Unobserve sau khi đã animate để tránh re-trigger
+                    galleryObserver.unobserve(entry.target);
+                }
+            });
+        }, {
+            threshold: 0.15, // Trigger khi 15% ảnh vào viewport
+            rootMargin: '0px 0px -50px 0px'
+        });
+        
+        document.querySelectorAll('.gallery-item').forEach(item => {
+            galleryObserver.observe(item);
+        });
+        
+        // Parent Section Animation
+        const parentSectionObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const section = entry.target;
+                    if (section.classList.contains('groom-side')) {
+                        section.classList.add('slide-in-left');
+                    } else if (section.classList.contains('bride-side')) {
+                        section.classList.add('slide-in-right');
+                    }
+                }
+            });
+        }, {
+            threshold: 0.3,
+            rootMargin: '0px 0px -100px 0px'
+        });
+        
+        document.querySelectorAll('.parent-section').forEach(section => {
+            parentSectionObserver.observe(section);
+        });
+        
+        // Smooth Scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth' });
+                }
+            });
+        });
+
+        // Door Opening Animation on Page Load
+        window.addEventListener('load', () => {
+            const doorOverlay = document.getElementById('doorOverlay');
+            
+            // Animation chạy 1.5s + delay 0.5s = 2s, sau đó đóng overlay
+            setTimeout(() => {
+                doorOverlay.classList.add('closed');
+                
+                // Trigger all sections & gallery animations starting at 2.1s
+                setTimeout(() => {
+                    // Make all scroll-reveal sections visible immediately after door closes
+                    document.querySelectorAll('.scroll-reveal').forEach((el, index) => {
+                        setTimeout(() => {
+                            el.classList.add('visible');
+                        }, index * 100); // Stagger by 100ms
+                    });
+
+                    // Make gallery grid visible
+                    const galleryGrid = document.querySelector('.gallery-grid');
+                    if (galleryGrid) {
+                        galleryGrid.classList.add('visible');
+                    }
+
+                    // Trigger parent section animations
+                    document.querySelectorAll('.parent-info-section').forEach((section, index) => {
+                        if (!section.classList.contains('visible')) {
+                            section.classList.add('visible');
+                        }
+                    });
+                }, 100); // Small delay after door closes
+                
+                // Tự động phát nhạc sau khi cửa mở xong
+                setTimeout(() => {
+                    if (!isPlaying) {
+                        audio.muted = false; // Bỏ mute
+                        audio.play()
+                            .then(() => {
+                                musicIcon.src = ICON_ON;
+                                isPlaying = true;
+                            })
+                            .catch((err) => {
+                                console.warn('Không thể tự động phát nhạc:', err);
+                                // Fallback: phát khi có tương tác
+                                audio.muted = true; // Mute lại để chờ tương tác
+                            });
+                    }
+                }, 500); // Đợi thêm 0.5s sau khi cửa đóng
+
+                // Also setup Intersection Observer for scroll reveals that appear later
+                const observerOptions = {
+                    threshold: 0.1,
+                    rootMargin: '0px 0px -100px 0px'
+                };
+
+                const observer = new IntersectionObserver((entries) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            entry.target.classList.add('visible');
+                            observer.unobserve(entry.target);
+                        }
+                    });
+                }, observerOptions);
+
+                // Observe all scroll-reveal sections
+                document.querySelectorAll('.scroll-reveal').forEach(el => {
+                    observer.observe(el);
+                });
+
+                // Observe parent-info-section
+                document.querySelectorAll('.parent-info-section').forEach(el => {
+                    observer.observe(el);
+                });
+
+                // Observe gallery grid
+                const galleryGrid = document.querySelector('.gallery-grid');
+                if (galleryGrid) {
+                    observer.observe(galleryGrid);
+                }
+            }, 2000);
+        });
+
+        // Phát nhạc khi người dùng tương tác với trang
+        function enableAutoPlay() {
+            if (!isPlaying) {
+                audio.muted = false; // Bỏ mute
+                audio.play()
+                    .then(() => {
+                        musicIcon.src = ICON_ON;
+                        isPlaying = true;
+                        // Xóa event listener sau khi đã phát nhạc thành công
+                        document.removeEventListener('click', enableAutoPlay);
+                        document.removeEventListener('touchstart', enableAutoPlay);
+                        document.removeEventListener('scroll', enableAutoPlay);
+                    })
+                    .catch(() => {});
+            }
+        }
+
+        // Lắng nghe các tương tác của người dùng
+        document.addEventListener('click', enableAutoPlay);
+        document.addEventListener('touchstart', enableAutoPlay);
+        document.addEventListener('scroll', enableAutoPlay, { once: true });
+
+        // ===== IMAGE OPTIMIZATION & LOADING EFFECTS =====
+        
+        // Optimize image loading with blur-up effect
+        const images = document.querySelectorAll('img[loading="lazy"]');
+        images.forEach(img => {
+            img.addEventListener('load', function() {
+                this.classList.add('loaded');
+                // Smooth transition from blur to clear
+                this.style.animation = 'blurFadeIn 0.6s ease-out';
+            });
+        });
+
+        // Add CSS for blur fade-in animation
+        const style = document.createElement('style');
+        style.textContent = `
+            @keyframes blurFadeIn {
+                from {
+                    filter: blur(10px);
+                    opacity: 0.8;
+                }
+                to {
+                    filter: blur(0px);
+                    opacity: 1;
+                }
+            }
+            
+            /* Performance optimization */
+            img.parent-info-image {
+                contain: layout style paint;
+                will-change: transform;
+            }
+            
+            .gallery-item img {
+                will-change: transform;
+                contain: layout style paint;
+            }
+        `;
+        document.head.appendChild(style);
+
+        // Preload adjacent gallery images
+        function preloadGalleryImages() {
+            const images = [
+                'images/1(1).jpg', 'images/1(2).jpg', 'images/1(3).jpg',
+                'images/1(4).jpg', 'images/1(5).jpg', 'images/1(6).jpg',
+                'images/1(7).jpg', 'images/1(8).jpg', 'images/1(9).jpg',
+                'images/1(10).jpg', 'images/1(11).jpg', 'images/1(12).jpg',
+                'images/1(13).jpg'
+            ];
+            
+            // Preload first 3 images immediately
+            images.slice(0, 3).forEach(src => {
+                const link = document.createElement('link');
+                link.rel = 'prefetch';
+                link.as = 'image';
+                link.href = src;
+                document.head.appendChild(link);
+            });
+            
+            // Preload rest on idle
+            if ('requestIdleCallback' in window) {
+                requestIdleCallback(() => {
+                    images.slice(3).forEach(src => {
+                        const link = document.createElement('link');
+                        link.rel = 'prefetch';
+                        link.as = 'image';
+                        link.href = src;
+                        document.head.appendChild(link);
+                    });
+                });
+            }
+        }
+        
+        // Start preloading when page is idle
+        window.addEventListener('load', preloadGalleryImages);
+
+        // Optimize images for different screen sizes
+        function optimizeImagesForScreenSize() {
+            const screenWidth = window.innerWidth;
+            // Add logic here if needed for responsive image optimization
+        }
+        
+        window.addEventListener('resize', optimizeImagesForScreenSize);
+
+        // Enable hardware acceleration for animations
+        document.querySelectorAll('.gallery-item, .parent-info-image-frame, .gallery-grid').forEach(el => {
+            el.style.transform = 'translateZ(0)';
+            el.style.willChange = 'transform';
+        });
+    </script>
+    <script src="js/wishes.js"></script>
+</body>
+</html>

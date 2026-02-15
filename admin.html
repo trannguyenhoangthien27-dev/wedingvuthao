@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Admin - Duyệt Lời Chúc</title>
+
+    <!-- Firebase (compat) -->
+    <script src="https://www.gstatic.com/firebasejs/10.5.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.5.0/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.5.0/firebase-firestore-compat.js"></script>
+
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        body{font-family:Roboto,Arial, Helvetica, sans-serif;background:#fff;padding:30px}
+        .wrap{max-width:900px;margin:0 auto}
+        h1{font-family:'Dancing Script', cursive;color:#c41e3a}
+        .pending-list{margin-top:20px}
+        .wish-card{background:#fff;border:1px solid #eee;padding:12px;border-radius:10px;margin-bottom:12px;box-shadow:0 4px 12px rgba(0,0,0,0.04)}
+        .wish-meta{font-size:13px;color:#666;margin-bottom:8px}
+        .wish-actions{margin-top:10px;display:flex;gap:8px}
+        .btn{padding:8px 12px;border-radius:8px;border:none;cursor:pointer}
+        .btn-approve{background:#2ecc71;color:#fff}
+        .btn-reject{background:#e74c3c;color:#fff}
+        .btn-refresh{background:#3498db;color:#fff}
+        .small-muted{color:#999;font-size:13px}
+        .topbar{display:flex;align-items:center;justify-content:space-between;gap:12px}
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="topbar">
+            <h1>📬 Admin - Duyệt Lời Chúc</h1>
+            <div>
+                <button id="refreshBtn" class="btn btn-refresh">Làm mới</button>
+            </div>
+        </div>
+
+        <p class="small-muted">Trang này dùng để xem các lời chúc gửi vào <strong>wishes_pending</strong>. Bạn có thể duyệt (Approve) hoặc từ chối (Reject) từng lời chúc.</p>
+
+        <div id="authArea">
+            <div id="loginForm" style="max-width:360px;margin-top:12px;">
+                <label style="display:block;margin-bottom:6px;font-weight:600">Đăng nhập Admin</label>
+                <input id="emailInput" type="email" placeholder="Email" style="width:100%;padding:10px;margin-bottom:8px;border-radius:6px;border:1px solid #ddd" />
+                <input id="passwordInput" type="password" placeholder="Mật khẩu" style="width:100%;padding:10px;margin-bottom:8px;border-radius:6px;border:1px solid #ddd" />
+                <div style="display:flex;gap:8px">
+                    <button id="signInBtn" class="btn btn-refresh">Đăng nhập</button>
+                    <button id="signOutBtn" class="btn" style="display:none;background:#aaa;color:#fff">Đăng xuất</button>
+                </div>
+                <div style="margin-top:8px;color:#999;font-size:13px">(Sử dụng tài khoản admin để duyệt lời chúc)</div>
+            </div>
+        </div>
+
+        <div id="status" class="small-muted">Kết nối Firebase chưa bắt đầu...</div>
+
+        <div class="pending-list" id="pendingList"></div>
+    </div>
+
+    <script src="config.js"></script>
+    <script src="js/admin.js"></script>
+</body>
+</html>
